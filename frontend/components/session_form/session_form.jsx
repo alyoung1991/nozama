@@ -13,7 +13,6 @@ class SessionForm extends React.Component {
 
     
     handleSubmit(e) {
-        debugger;
         e.preventDefault();
         // converts email to lowercase
         const user = {

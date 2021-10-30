@@ -6,6 +6,7 @@
 #  name        :string           not null
 #  description :text             not null
 #  price       :float            not null
+#  picture_url :string           not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #

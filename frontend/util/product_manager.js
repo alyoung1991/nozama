@@ -10,16 +10,6 @@ class ProductManager {
                 this.products[product.id] = product;
             }
         });
-        
-        // const productsObj = {};
-        // products.forEach(product => productsObj[product.id] = product);
-
-        // Object.values(this.products).forEach((product) => {
-        //     console.log(!productsObj[product.productId]);
-        //     if(!productsObj[product.productId]){
-        //         this.removeProduct(product);
-        //     }
-        // });
     }
 }
 

@@ -1,6 +1,6 @@
 class Api::ProductsController < ApplicationController
     def index
-        @products = Product.all
+        @products = Product.search_query_match(params[:query])
         render :index
     end
 

@@ -13,6 +13,6 @@
 class Product < ApplicationRecord
     # validates :name, :description, :price, presence: true
     def self.search_query_match(query)
-        self.where("name LIKE ?", "%" + query + "%")
+        self.where("LOWER(name) LIKE ?", "%" + query.downcase + "%")
     end
 end

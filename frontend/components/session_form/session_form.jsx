@@ -74,7 +74,7 @@ class SessionForm extends React.Component {
                                 onChange={this.handleInput('name')}
                             />
                         </label>
-                    ) : (<div></div>)
+                    ) : (<></>)
                     }
                     <label>Email
                         <input 
@@ -95,7 +95,7 @@ class SessionForm extends React.Component {
                     <input type="submit" value={this.props.formType} />
                     {this.props.formType === 'login' ? (
                         <button onClick={this.demoLogin}>Demo User Login</button>
-                    ) : (<div></div>)
+                    ) : (<></>)
                     }
                     
                 </div>

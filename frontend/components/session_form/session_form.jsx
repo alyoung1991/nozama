@@ -12,6 +12,10 @@ class SessionForm extends React.Component {
         this.demoLogin = this.handleSubmit.bind(this);
     }
 
+    componentDidUpdate(){
+        // this.props.errors = [];
+    }
+
     
     handleSubmit(e) {
         e.preventDefault();

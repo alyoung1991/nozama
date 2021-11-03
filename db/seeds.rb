@@ -84,6 +84,12 @@ p10 = Product.create!(
     picture_url: 'https://m.media-amazon.com/images/I/71Og586RJCL._AC_SL1500_.jpg'
 )
 
+demoUser = User.create!(
+    name: 'Demo User',
+    email: 'demo@email.com',
+    password: 'password'
+)
+
 u1 = User.create!(
     name: 'Alberto Young',
     email: 'alyoung1991@gmail.com',

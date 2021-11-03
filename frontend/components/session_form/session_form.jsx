@@ -6,16 +6,12 @@ class SessionForm extends React.Component {
         this.state = {
             email: "",
             password: "",
-            name: ""
+            name: "",
+            errors: []
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoLogin = this.handleSubmit.bind(this);
     }
-
-    componentDidUpdate(){
-        // this.props.errors = [];
-    }
-
     
     handleSubmit(e) {
         e.preventDefault();
@@ -38,18 +34,6 @@ class SessionForm extends React.Component {
     
     handleInput(field) {
         return e => this.setState({[field]: e.currentTarget.value});
-    }
-
-    demoLogin(e){
-        
-        e.preventDefault();
-
-        const user = {
-            email: 'demo@email.com',
-            password: 'password',
-            name: 'Demo User'
-        }
-        this.props.processForm(user);
     }
 
     renderErrors() {
@@ -99,7 +83,7 @@ class SessionForm extends React.Component {
                     <br/>
                     <input type="submit" value={this.props.formType} />
                     {this.props.formType === 'login' ? (
-                        <button onClick={this.demoLogin}>Demo User Login</button>
+                        <button onClick={this.handleSubmit}>Demo User Login</button>
                     ) : (<></>)
                     }
                     

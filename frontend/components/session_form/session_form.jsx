@@ -65,6 +65,7 @@ class SessionForm extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                 {this.renderErrors()}
+                {this.props.navLink}
                 <div>
                     {this.props.formType === 'signup' ? (
                         <label>Your name

@@ -9,22 +9,43 @@ class SessionForm extends React.Component {
             name: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoLogin = this.handleSubmit.bind(this);
     }
 
     
     handleSubmit(e) {
         e.preventDefault();
-        // converts email to lowercase
-        const user = {
+
+        let user = {
+            // converts email to lowercase
             email: this.state.email.toLowerCase(),
             password: this.state.password,
             name: this.state.name
+        }
+        if(e.target.localName === "button"){
+            user = {
+                email: 'demo@email.com',
+                password: 'password',
+                name: 'Demo User'
+            };
         }
         this.props.processForm(user);
     }
     
     handleInput(field) {
         return e => this.setState({[field]: e.currentTarget.value});
+    }
+
+    demoLogin(e){
+        
+        e.preventDefault();
+
+        const user = {
+            email: 'demo@email.com',
+            password: 'password',
+            name: 'Demo User'
+        }
+        this.props.processForm(user);
     }
 
     renderErrors() {
@@ -72,6 +93,11 @@ class SessionForm extends React.Component {
                     </label>
                     <br/>
                     <input type="submit" value={this.props.formType} />
+                    {this.props.formType === 'login' ? (
+                        <button onClick={this.demoLogin}>Demo User Login</button>
+                    ) : (<div></div>)
+                    }
+                    
                 </div>
                 </form>
             </div>

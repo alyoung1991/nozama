@@ -8,7 +8,6 @@ import SearchContainer from "./search/search_container";
 
 const App = () => {
     const location = useLocation();
-    console.log(location);
     return (
         <div>
             <header>

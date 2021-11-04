@@ -50,49 +50,51 @@ class SessionForm extends React.Component {
     }
 
     render(){
+        const formTypeText = this.props.formType === 'login' ? 'Sign-In' : 'Create account';
         return(
-            <div>
+            <div className="session-form">
                 <Link to="/">
-                    <h1>Nozama</h1>
+                    <img className="logo session-logo" src="assets/logo2.png" alt="nozama-logo-2" />
                 </Link>
-                <form onSubmit={this.handleSubmit}>
-                {this.renderErrors()}
-                {this.props.navLink}
-                <div>
-                    {this.props.formType === 'signup' ? (
-                        <label>Your name
-                            <input 
-                                type="text"
-                                value={this.state.name}
-                                onChange={this.handleInput('name')}
-                            />
-                        </label>
-                    ) : (<></>)
-                    }
-                    <label>Email
+                <form className="session-form-section" onSubmit={this.handleSubmit}>
+                    <div className="session-form-heading">{formTypeText}</div>
+                    {this.renderErrors()}
+                    <div className="session-form-inputs">
+                        {this.props.formType === 'signup' ? (
+                            <>
+                                <label className="auth-input-label">Your name</label>
+                                <input 
+                                    className="auth-input"
+                                    type="text"
+                                    value={this.state.name}
+                                    onChange={this.handleInput('name')}
+                                />
+                            </>
+                        ) : (<></>)
+                        }
+                        <label className="auth-input-label">Email</label>
                         <input 
+                            className="auth-input"
                             type="text"
                             value={this.state.email}
                             onChange={this.handleInput('email')}
                         />
-                    </label>
-                    <br/>
-                    <label>Password
+                        <label className="auth-input-label">Password</label>
                         <input 
+                            className="auth-input"
                             type="password"
                             value={this.state.password}
                             onChange={this.handleInput('password')}
                         />
-                    </label>
-                    <br/>
-                    <input type="submit" value={this.props.formType} />
-                    {this.props.formType === 'login' ? (
-                        <button onClick={this.handleSubmit}>Demo User Login</button>
-                    ) : (<></>)
-                    }
-                    
-                </div>
+                        <input className="auth-submit-button" type="submit" value={formTypeText} />
+                        {this.props.formType === 'login' ? (
+                            <button className="auth-submit-button" onClick={this.handleSubmit}>Guest</button>
+                        ) : (<></>)
+                        }
+                        <div className="auth-disclaimer">By continuing, you agree to check out the Nozama creator's <a className="auth-social-link" href="https://www.linkedin.com/in/albertoyoung/">LinkedIn</a> and <a className="auth-social-link" href="https://www.youngalberto.com/">Portfolio</a>.</div>
+                    </div>
                 </form>
+                {this.props.navLink}
             </div>
         );
     }

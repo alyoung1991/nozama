@@ -3,7 +3,6 @@
 body {
     font-family: Arial, sans-serif;
 }
-
 .nav-bar {
     background-color: $nav-bg-color;
     color: $nav-text-color;
@@ -41,7 +40,7 @@ body {
 }
 
 .search-bar {
-    color: $search-text-color;
+    color: $amazon-black;
     font-size: 15px;
     height: 26px;
     width: 400px;
@@ -65,7 +64,7 @@ body {
 
 .signout-button {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: $bold;
 }
 
 .greeting-message {
@@ -74,9 +73,84 @@ body {
 
 .auth-link {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: $bold;
     text-decoration: none;
     color: $nav-text-color;
+}
+
+.session-form {
+    width: 100vw;
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.session-logo {
+    margin-bottom: 18px;
+}
+
+.session-form-section {
+    width: 298px;
+    padding: 20px 26px;
+    border: 1px solid $session-form-border-color;
+    border-radius: 4px;
+}
+
+.session-form-heading {
+    font-size: 28px;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.session-form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-input-label {
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: $bold;
+    color: $amazon-black;
+}
+
+.auth-input {
+    height: 31px;
+    padding: 3px 7px;
+    margin-bottom: 14px;
+    border: 1px solid $session-input-border-color;
+    border-radius: 4px;
+}
+
+.auth-submit-button {
+    height: 31px;
+    // generated using https://cssgradient.io/
+    background: rgb(240,193,77);
+    background: linear-gradient(0deg, rgba(240,193,77,1) 0%, rgba(250,235,200,1) 100%);
+    border: 1px solid $auth-submit-btn-border-color;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+
+    &:hover {
+        // generated using https://cssgradient.io/
+        background: rgb(238,185,51);
+        background: linear-gradient(0deg, rgba(238,185,51,1) 0%, rgba(249,230,186,1) 100%);
+    }
+}
+
+.auth-disclaimer {
+    margin: 10px 0 5px 0;
+    font-size: 12px;
+    line-height: 19px;
+    color: $amazon-black;
+}
+
+.auth-social-link {
+    text-decoration: none;
 }
 
 .product-index-image {

@@ -1,5 +1,4 @@
-import { connect } from "react-redux"
-import { fetchProducts } from "../../actions/product_actions";
+import { connect } from "react-redux";
 import { updateFilter } from "../../actions/filter_actions";
 import Search from "./search";
 

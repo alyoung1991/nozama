@@ -7,7 +7,9 @@ import { signup } from '../../actions/session_actions';
 const mapStateToProps = ({ errors }) => ({
     errors: errors.session,
     formType: 'signup',
-    navLink: <Link to="/login" onClick={() => errors.session = []}>Sign in</Link>
+    navLink: <Link to="/login" onClick={() => errors.session = []}>
+                <button className="alt-auth-button">Sign-In</button>
+            </Link>
 });
 
 const mapDispatchToProps = (dispatch) => ({

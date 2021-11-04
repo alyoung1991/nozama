@@ -7,7 +7,9 @@ import { login } from '../../actions/session_actions';
 const mapStateToProps = ({errors}) => ({
     errors: errors.session,
     formType: 'login',
-    navLink: <Link to="/signup" onClick={() => errors.session = []}>Sign up</Link>
+    navLink: <Link to="/signup" onClick={() => errors.session = []}>
+                <button className="alt-auth-button">Create your Nozama account</button>
+            </Link>
 });
 
 const mapDispatchToProps = (dispatch) => ({

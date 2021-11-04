@@ -51,7 +51,10 @@ class SessionForm extends React.Component {
 
     render(){
         const formTypeText = this.props.formType === 'login' ? 'Sign-In' : 'Create account';
+        const alternateFormPromptText = this.props.formType === 'login' ? 'New to Nozama?' : 'Already have an account?';
         return(
+            <div className="session-page">
+                
             <div className="session-form">
                 <Link to="/">
                     <img className="logo session-logo" src="assets/logo2.png" alt="nozama-logo-2" />
@@ -94,7 +97,16 @@ class SessionForm extends React.Component {
                         <div className="auth-disclaimer">By continuing, you agree to check out the Nozama creator's <a className="auth-social-link" href="https://www.linkedin.com/in/albertoyoung/">LinkedIn</a> and <a className="auth-social-link" href="https://www.youngalberto.com/">Portfolio</a>.</div>
                     </div>
                 </form>
+                <div className="session-form-divider">
+                    <hr className="divider-line">
+                    </hr>
+                    <div className="alt-form-prompt">{alternateFormPromptText}</div>
+                </div>
                 {this.props.navLink}
+            </div>
+            <div className="shadow">
+
+            </div>
             </div>
         );
     }

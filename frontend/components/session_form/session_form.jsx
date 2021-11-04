@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -51,6 +52,9 @@ class SessionForm extends React.Component {
     render(){
         return(
             <div>
+                <Link to="/">
+                    <h1>Nozama</h1>
+                </Link>
                 <form onSubmit={this.handleSubmit}>
                 {this.renderErrors()}
                 {this.props.navLink}

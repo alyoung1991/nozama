@@ -8,7 +8,6 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    fetchProducts: () => dispatch(fetchProducts()),
     updateSearchQuery: (query) => dispatch(updateFilter(query))
 })
 

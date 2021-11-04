@@ -1,18 +1,19 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import ProductManager from '../../util/product_manager';
 
 class SearchBar extends React.Component {
     constructor(props){
         super(props);
-        this.state = { query: ''};
+        this.query = this.props.location.search.split('=')[1] ? this.props.location.search.split('=')[1] : '';
+        this.state = { query: this.query };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.props.updateSearchQuery(this.state.query);
     }
 
     componentDidMount(){
         this.ProductManager = new ProductManager(this.state.query);
         this.ProductManager.updateProducts(this.props.products);
-
-        
     }
 
     componentDidUpdate(){
@@ -21,6 +22,12 @@ class SearchBar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
+
+        this.props.history.push({
+            pathname: '/products/',
+            search: `q=${this.state.query}`
+        });
+
         this.props.updateSearchQuery(this.state.query);
     }
 
@@ -42,4 +49,4 @@ class SearchBar extends React.Component {
     }
 }
 
-export default SearchBar;
+export default withRouter(SearchBar);

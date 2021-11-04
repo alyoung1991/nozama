@@ -5,12 +5,15 @@ import ProductManager from '../../util/product_manager';
 class SearchBar extends React.Component {
     constructor(props){
         super(props);
-        this.query = this.props.location.search.split('=')[1] ? this.props.location.search.split('=')[1] : '';
+        const queryParams = this.props.location.search.replace(/\?/g, '').split("+")
+        this.query = queryParams[0] ? queryParams[0].substring(2) : '';
+        this.department = queryParams[1] ? queryParams[1].substring(2) : 'All'
         this.state = { 
             query: this.query,
-            department: 'All'
+            department: this.department
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.props.updateSearchQuery('department', this.state.department);
         this.props.updateSearchQuery('query', this.state.query);
     }
 
@@ -25,20 +28,18 @@ class SearchBar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        console.log(this.state);
         this.props.history.push({
             pathname: '/products/',
-            search: `q=${this.state.query}`
+            search: `q=${this.state.query}+d=${this.state.department}`
         });
 
-        this.props.updateSearchQuery('query', this.state.query);
         this.props.updateSearchQuery('department', this.state.department);
+        this.props.updateSearchQuery('query', this.state.query);
     }
 
     handleInput(filter){
         return (e) => {
             this.setState({ [filter]: e.target.value});
-            // this.props.updateSearchQuery(filter, e.target.value);
         }
     }
 

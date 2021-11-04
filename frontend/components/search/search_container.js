@@ -3,11 +3,12 @@ import { updateFilter } from "../../actions/filter_actions";
 import Search from "./search";
 
 const mapStateToProps = (state) => ({
-    products: Object.values(state.entities.products)
+    products: Object.values(state.entities.products),
+    department: state.ui.filters.department
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    updateSearchQuery: (query) => dispatch(updateFilter(query))
+    updateSearchQuery: (filter, value) => dispatch(updateFilter(filter, value))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);

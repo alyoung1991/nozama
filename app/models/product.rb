@@ -6,9 +6,10 @@
 #  name        :string           not null
 #  description :text             not null
 #  price       :float            not null
-#  picture_url :string           not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  picture_url :string           not null
+#  department  :string           not null
 #
 class Product < ApplicationRecord
     # validates :name, :description, :price, presence: true

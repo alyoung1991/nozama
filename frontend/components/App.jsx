@@ -1,10 +1,10 @@
 import React from "react";
-import GreetingContainer from "./greeting/greeting_container";
+import NavBar from "./navigation/nav_bar";
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ProductIndexContainer from "./search/product_index_container";
 import ProductShowContainer from './product_show/product_show_container';
-import { Switch, Route, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom';
 import { AuthRoute } from "../util/route_util";
 
 
@@ -13,7 +13,7 @@ const App = () => {
     return (
         <div>
             <header>
-                {location.pathname == '/login' || location.pathname == '/signup' ? null : <GreetingContainer />}
+                {location.pathname == '/login' || location.pathname == '/signup' ? null : <NavBar />}
             </header>
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer} />

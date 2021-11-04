@@ -19,7 +19,7 @@ class ProductIndexItem extends React.Component {
                 <p>{name}</p>
                 <p>{description}</p>
                 <p>${price}</p>
-                <img src={picture_url} alt={name} />
+                <img className="product-index-image" src={picture_url} alt={name} />
             </div>
         );
     }

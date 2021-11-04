@@ -40,9 +40,12 @@ class SearchBar extends React.Component {
     render(){
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" value={this.state.query} onChange={this.handleInput()} />
-                    <input type="submit" value="search" />
+                <form className="search-bar-form" onSubmit={this.handleSubmit}>
+                    <select className="search-department-dropdown" type="dropdown">
+                        <option value="All">All</option>
+                    </select>
+                    <input className="search-bar" type="text" value={this.state.query} onChange={this.handleInput()} />
+                    <button className="search-button"><i className="fas fa-search"></i></button>
                 </form>
             </div>
         );

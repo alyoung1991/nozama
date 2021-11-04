@@ -1,25 +1,21 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import SearchContainer from "../search/search_container";
+import { Link } from 'react-router-dom';
 
 const Greeting = ({currentUser, logout}) => {
     const display = currentUser ? (
         <div>
             <div>Hello, {currentUser.name.split(' ')[0]}</div>
-            <button onClick={logout}>Sign Out</button>
+            <span className="signout-button" onClick={logout}>Sign Out</span>
         </div>
     ) : (
         <div>
-            <Link to="/signup">Sign Up</Link>
-            <Link to="/login">Login</Link>
+            <div>Hello, Sign in</div>
+            <Link className="auth-link" to="/signup">Sign Up</Link>
+            <Link className="auth-link" to="/login">Login</Link>
         </div>
     )
     return(
-        <div>
-            <Link to="/">
-                <h1>Nozama</h1>
-            </Link>
-            <Route path="/" component={SearchContainer} />
+        <div className="greeting-message">
             {display}
         </div>
     );

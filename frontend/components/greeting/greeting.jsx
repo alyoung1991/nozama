@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import SearchContainer from "../search/search_container";
 
 const Greeting = ({currentUser, logout}) => {
     const display = currentUser ? (
@@ -15,6 +16,10 @@ const Greeting = ({currentUser, logout}) => {
     )
     return(
         <div>
+            <Link to="/">
+                <h1>Nozama</h1>
+            </Link>
+            <Route path="/" component={SearchContainer} />
             {display}
         </div>
     );

@@ -4,11 +4,11 @@ import ProductIndexItem from "./product_index_item";
 class ProductIndex extends React.Component {
     render(){
         return(
-            <ul>
+            <div className="products-container">
                 {this.props.products.map((product) => {
-                    return <li key={product.id}><ProductIndexItem product={product} /></li>
+                    return <ProductIndexItem key={product.id} product={product} />
                 })}
-            </ul>
+            </div>
         );
     }
 }

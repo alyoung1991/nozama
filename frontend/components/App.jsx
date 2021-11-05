@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./navigation/nav_bar";
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
-import ProductIndexContainer from "./search/product_index_container";
+import ProductIndexContainer from "./product_index/product_index_container";
 import ProductShowContainer from './product_show/product_show_container';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { AuthRoute } from "../util/route_util";

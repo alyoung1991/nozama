@@ -278,7 +278,7 @@ b {
 }
 
 .product-card-shipping {
-    color: $product-card-secondary-color;
+    color: $product-secondary-grey;
     padding-top: 4px;
     font-size: 14px;
     line-height: 20px;
@@ -298,10 +298,24 @@ b {
 
 .product-info-section {
     width: 30%;
+    margin-right: 25px;
 
     .product-show-title{
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .product-show-price{
+        font-size: 14px;
+        line-height: 20px;
+        color: $product-secondary-grey;
+        border-bottom: 1px solid $product-card-border-color;
+
+        .price-amount {
+            font-size: 18px;
+            line-height: 24px;
+            color: $product-show-price-color;
+        }
     }
     
     .about-heading {
@@ -314,6 +328,7 @@ b {
         list-style-position: inside;
         font-size: 14px;
         line-height: 20px;
+        border-bottom: 1px solid $product-card-border-color;
 
         li span{
             position: relative;
@@ -331,5 +346,5 @@ b {
 }
 
 .product-show-image {
-    width: 75%;
+    height: 75vh;
 }

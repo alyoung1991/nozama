@@ -13,7 +13,7 @@ const ProductDetail = ({product}) => {
                 <div className="product-info-section">
                     <div className="product-show-title">{product.name}</div>
                     <div>RATING PLACEHOLDER</div>
-                    <div>Price: ${product.price}</div>
+                    <div className="product-show-price">Price: <span className="price-amount">${product.price}</span></div>
                     <div className="about-heading"><b>About this item</b></div>
                     <ul className="about-list">
                         {aboutThisItemArray.map(about => {

@@ -2,6 +2,11 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: $amazon-dark-blue;
+}
+
+b {
+    font-weight: 700;
 }
 .nav-bar {
     background-color: $amazon-dark-blue;
@@ -217,6 +222,9 @@ body {
     margin: 0 12px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1235px) {
+        width: 30%;
+    }
 }
 
 .product-card-top-border {
@@ -238,7 +246,6 @@ body {
 
 .product-card-title {
     margin-top: 8px;
-    color: $amazon-dark-blue;
     font-size: 16px;
     line-height: 24px;
     &:hover{
@@ -252,7 +259,6 @@ body {
 }
 
 .product-card-price {
-    color: $amazon-dark-blue;
     margin-top: 8px;
     display: flex;
     align-items: flex-start;
@@ -278,6 +284,52 @@ body {
     line-height: 20px;
 }
 
+.product-show-container {
+    padding: 0 18px 18px 18px;
+}
+
+.product-main-section {
+    display: flex;
+}
+
+.product-gallery-section {
+    width: 50%;
+}
+
+.product-info-section {
+    width: 30%;
+
+    .product-show-title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .about-heading {
+        padding-bottom: 4px;
+        line-height: 24px;
+    }
+
+    .about-list {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-size: 14px;
+        line-height: 20px;
+
+        li span{
+            position: relative;
+            left: -3px;
+        }
+    }
+
+    
+}
+
+.product-checkout-section {
+    width: 20%;
+    border: 1px solid $product-show-checkout-border-color;
+    border-radius: 8px;
+}
+
 .product-show-image {
-    width: 600px;
+    width: 75%;
 }

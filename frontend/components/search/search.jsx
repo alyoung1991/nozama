@@ -1,9 +1,9 @@
 import React from 'react';
 import SearchBar from './search_bar';
 
-const Search = ({products, updateSearchQuery}) => (
+const Search = ({products, updateFilter}) => (
     <div>
-        <SearchBar products={products} updateSearchQuery={updateSearchQuery} />
+        <SearchBar products={products} updateFilter={updateFilter} />
     </div>
 )
 

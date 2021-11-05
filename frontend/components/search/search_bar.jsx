@@ -13,8 +13,8 @@ class SearchBar extends React.Component {
             department: this.department
         };
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.props.updateSearchQuery('department', this.state.department);
-        this.props.updateSearchQuery('query', this.state.query);
+        this.props.updateFilter('department', this.state.department);
+        this.props.updateFilter('query', this.state.query);
     }
 
     componentDidMount(){
@@ -26,6 +26,10 @@ class SearchBar extends React.Component {
         this.ProductManager.updateProducts(this.props.products);
     }
 
+    componentWillUnmount(){
+        document.querySelector(".search-bar").value = '';
+    }
+
     handleSubmit(e){
         e.preventDefault();
         this.props.history.push({
@@ -33,8 +37,8 @@ class SearchBar extends React.Component {
             search: `q=${this.state.query}+d=${this.state.department}`
         });
 
-        this.props.updateSearchQuery('department', this.state.department);
-        this.props.updateSearchQuery('query', this.state.query);
+        this.props.updateFilter('department', this.state.department);
+        this.props.updateFilter('query', this.state.query);
     }
 
     handleInput(filter){

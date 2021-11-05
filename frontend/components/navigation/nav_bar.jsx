@@ -6,7 +6,7 @@ import SearchContainer from '../search/search_container';
 const NavBar = () => (
     <div className="nav-bar">
         <Link to="/">
-            <img className="logo" src="/assets/logo.png" alt="nozama logo" />
+            <img className="logo" src={window.logo1URL} alt="nozama logo" />
         </Link>
         <Route path="/" component={SearchContainer} />
         <GreetingContainer />

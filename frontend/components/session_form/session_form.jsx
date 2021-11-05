@@ -56,7 +56,7 @@ class SessionForm extends React.Component {
             <div className="session-page">
                 <div className="session-form">
                     <Link to="/">
-                        <img className="logo session-logo" src="assets/logo2.png" alt="nozama-logo-2" />
+                        <img className="logo session-logo" src={window.logo2URL} alt="nozama-logo-2" />
                     </Link>
                     <form className="session-form-section" onSubmit={this.handleSubmit}>
                         <div className="session-form-heading">{formTypeText}</div>

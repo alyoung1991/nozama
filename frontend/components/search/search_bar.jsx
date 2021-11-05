@@ -18,12 +18,15 @@ class SearchBar extends React.Component {
     }
 
     componentDidMount(){
-        this.ProductManager = new ProductManager(this.state.query);
-        this.ProductManager.updateProducts(this.props.products);
-    }
-
-    componentDidUpdate(){
-        this.ProductManager.updateProducts(this.props.products);
+        const logo = document.querySelector(".logo");
+        let that = this;
+        logo.addEventListener("click", () => {
+            document.querySelector(".search-department-dropdown").selectedIndex = 0;
+            that.setState({
+                query: '',
+                department: 'All'
+            });
+        })
     }
 
     componentWillUnmount(){

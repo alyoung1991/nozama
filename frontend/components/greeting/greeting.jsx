@@ -10,7 +10,7 @@ const Greeting = ({currentUser, logout}) => {
     ) : (
         <div>
             <div>Hello, Sign in</div>
-            <Link className="auth-link" to="/signup">Sign Up</Link>
+            <Link className="auth-link" to="/signup">Sign Up</Link>{' or '}
             <Link className="auth-link" to="/login">Login</Link>
         </div>
     )

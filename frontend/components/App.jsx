@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./navigation/nav_bar";
+import NavBarContainer from "./navigation/nav_bar_container";
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ProductIndexContainer from "./product_index/product_index_container";
@@ -13,7 +13,7 @@ const App = () => {
     return (
         <div>
             <header>
-                {location.pathname == '/login' || location.pathname == '/signup' ? null : <NavBar />}
+                {location.pathname == '/login' || location.pathname == '/signup' ? null : <NavBarContainer />}
             </header>
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer} />

@@ -25,9 +25,9 @@ class SessionForm extends React.Component {
         }
         if(e.target.localName === "button"){
             user = {
-                email: 'demo@email.com',
+                email: 'guest@email.com',
                 password: 'password',
-                name: 'Demo User'
+                name: 'Guest User'
             };
         }
         this.props.processForm(user);
@@ -93,7 +93,7 @@ class SessionForm extends React.Component {
                                 <button className="auth-submit-button" onClick={this.handleSubmit}>Guest</button>
                             ) : (<></>)
                             }
-                            <div className="auth-disclaimer">By continuing, you agree to check out the Nozama creator's <a className="auth-social-link" href="https://www.linkedin.com/in/albertoyoung/">LinkedIn</a> and <a className="auth-social-link" href="https://www.youngalberto.com/">Portfolio</a>.</div>
+                            <div className="auth-disclaimer">By continuing, you agree to check out the Nozama creator's <a className="auth-social-link" href="https://www.linkedin.com/in/albertoyoung/" target="_blank">LinkedIn</a> and <a className="auth-social-link" href="https://www.youngalberto.com/" target="_blank">Portfolio</a>.</div>
                         </div>
                     </form>
                     <div className="session-form-divider">

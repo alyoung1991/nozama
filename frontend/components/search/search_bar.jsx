@@ -57,18 +57,13 @@ class SearchBar extends React.Component {
                     <select type="dropdown" className="search-department-dropdown" onChange={this.handleInput('department')}>
                         <option defaultValue value="All">All</option>
                         <option value="Appliances">Appliances</option>
-                        <option value="Apps & Games">Apps & Games</option>
                         <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
                         <option value="Automotive Parts & Accessories">Automotive Parts & Accessories</option>
                         <option value="Baby">Baby</option>
                         <option value="Beauty & Personal Care">Beauty & Personal Care</option>
-                        <option value="Books">Books</option>
-                        <option value="CDs & Vinyl">CDs & Vinyl</option>
                         <option value="Cell Phones & Accessories">Cell Phones & Accessories</option>
                         <option value="Clothing, Shoes & Jewelry">Clothing, Shoes & Jewelry</option>
-                        <option value="Collectibles & Fine Art">Collectibles & Fine Art</option>
                         <option value="Computers">Computers</option>
-                        <option value="Digital Music">Digital Music</option>
                         <option value="Electronics">Electronics</option>
                         <option value="Garden & Outdoor">Garden & Outdoor</option>
                         <option value="Gift Cards">Gift Cards</option>

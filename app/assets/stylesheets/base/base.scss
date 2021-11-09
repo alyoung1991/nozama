@@ -438,8 +438,12 @@ b {
     }
 
     .product-show-rating{
+        font-size: 14px;
+        line-height: 20px;
+        color: $amazon-link-blue;
         border-bottom: 1px solid $product-card-border-color;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
     }
 
     .product-show-price{
@@ -632,4 +636,64 @@ b {
             }
         }
     }
+}
+
+.product-review-right-col{
+    width: 680px;
+    max-width: 680px;
+}
+
+.reviews-heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: $bold;
+    margin: 24px 0 16px 0;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-author-section {
+    height: 34px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+
+    .review-author-avatar {
+        color: $user-avatar-grey;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .review-author {
+        font-size: 12px;
+    }
+}
+
+.review-headline {
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.review-date {
+    color: $product-secondary-grey;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.review-verified-purchase {
+    color: $verified-purchase-orange;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: $bold;
+    margin: 4px 0;
+}
+
+.review-body {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
 }

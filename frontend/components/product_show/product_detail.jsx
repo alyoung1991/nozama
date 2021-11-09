@@ -4,7 +4,6 @@ import ReviewListItemContainer from './review_list_item_container';
 
 const ProductDetail = ({product, reviews}) => {
     if(!product) return null;
-
     const reviewList = (reviews) => {
         return reviews.map(review => (
             <ReviewListItemContainer
@@ -13,6 +12,14 @@ const ProductDetail = ({product, reviews}) => {
             />
         ))
     };
+
+    let averageRating = 3;
+
+    if(reviews.length !== 0){
+        averageRating = reviews.map(review => {
+            return review.rating;
+        }).reduce((curr, acc) => curr + acc) / reviews.length;
+    }
 
     const aboutThisItemArray = product.description.split("//");
     const priceFormatter = new Intl.NumberFormat('en-US', {
@@ -44,7 +51,6 @@ const ProductDetail = ({product, reviews}) => {
 
     return(
         <div className="product-show-container">
-            
             <div className="product-main-row">
                 <div className="product-main-section">
                     <div className="return-row">
@@ -60,7 +66,7 @@ const ProductDetail = ({product, reviews}) => {
                         </div>
                         <div className="product-info-section">
                             <div className="product-show-title">{product.name}</div>
-                            <div className="product-show-rating">RATING PLACEHOLDER</div>
+                            <div className="product-show-rating">{averageRating} {reviews.length} ratings</div>
                             <div className="product-show-price">Price: 
                                 <span className="price-amount">{priceFormatter.format(product.price)}</span>
                                 <span className="free-returns-label">& <span className="free-returns-link">FREE Returns</span></span>
@@ -77,7 +83,6 @@ const ProductDetail = ({product, reviews}) => {
                                 <div className="price-amount">{priceFormatter.format(product.price)}</div>
                                 <div className="free-returns-label">& <span className="free-returns-link">FREE Returns</span></div>
                             </div>
-
                             <div className="product-checkout-delivery">
                                 <div className="free-eta">
                                     <span>FREE delivery:</span><b> {freeEtaString}</b>
@@ -120,19 +125,17 @@ const ProductDetail = ({product, reviews}) => {
                                 <div>Return policy: <span className="return-dealine">{returnDeadlineString}</span></div> 
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>  
                 </div>
             </div>
-
-            <div className="reviews">
-                <h3>Reviews</h3>
-                {reviewList(reviews)}
+            <div className="product-reviews-row">
+                <div className="product-review-right-col">
+                    <div className="reviews-heading">Customer reviews</div>
+                    {reviewList(reviews).length === 0 ? 'No Reviews' : reviewList(reviews)}
+                </div>
             </div>
-            
         </div>
     );
-    
 };
 
 export default ProductDetail;

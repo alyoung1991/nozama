@@ -17,4 +17,8 @@ class Review < ApplicationRecord
     belongs_to :product
     belongs_to :author,
         class_name: :User
+
+    def self.get_product_reviews(product_id)
+        self.where("product_id = ?", product_id)
+    end
 end

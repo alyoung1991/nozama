@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchProduct } from "../../actions/product_actions";
+import { fetchProduct, fetchReviews } from "../../actions/product_actions";
 import { selectProduct, selectReviewsForProduct } from "../../reducers/selectors";
 import ProductShow from './product_show';
 
@@ -15,7 +15,8 @@ const mapStateToProps = (state, {match}) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    fetchProduct: id => dispatch(fetchProduct(id))
+    fetchProduct: id => dispatch(fetchProduct(id)),
+    fetchReviews: productId => dispatch(fetchReviews(productId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductShow);

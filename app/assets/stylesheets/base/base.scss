@@ -444,6 +444,16 @@ b {
         border-bottom: 1px solid $product-card-border-color;
         margin-bottom: 8px;
         padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+
+        .product-show-stars {
+            padding-right: 10px;
+        }
+
+        .product-show-num-ratings{
+            padding-bottom: 2px;
+        }
     }
 
     .product-show-price{
@@ -638,7 +648,13 @@ b {
     }
 }
 
-.product-review-right-col{
+.product-show-row-divider {
+    width: 100%;
+    margin: 20px 10px;
+    border-bottom: 1px solid $product-row-border-color;
+}
+
+.product-review-right-col {
     width: 680px;
     max-width: 680px;
 }
@@ -697,3 +713,12 @@ b {
     line-height: 20px;
     margin-bottom: 8px;
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+// .star {
+//     cursor: pointer;
+//     transition: color 200ms;
+// }

@@ -2,6 +2,10 @@ Product.delete_all
 User.delete_all
 Review.delete_all
 
+ActiveRecord::Base.connection.reset_pk_sequence!("products")
+ActiveRecord::Base.connection.reset_pk_sequence!("users")
+ActiveRecord::Base.connection.reset_pk_sequence!("reviews")
+
 # product seeds:
 
 Product.create!(
@@ -1217,6 +1221,8 @@ Product.create!(
 #     picture_url: 'https://m.media-amazon.com/images/I/713xuNx00oS._AC_SL1500_.jpg'
 # )
 
+# user seeds:
+
 demoUser = User.create!(
     name: 'Guest User',
     email: 'guest@email.com',
@@ -1240,3 +1246,15 @@ u3 = User.create!(
     email: 'jd@email.com',
     password: 'password'
 )
+
+# review seeds:
+
+1000.times do
+    Review.create!(
+        headline: Faker::Lorem.words(number: rand(4..8).to_i).join(" "),
+        body: Faker::Lorem.words(number: rand(40..60).to_i).join(" "),
+        rating: rand(1..5).to_i,
+        product_id: rand(1..10).to_i,
+        author_id: rand(1..4).to_i
+    )
+end

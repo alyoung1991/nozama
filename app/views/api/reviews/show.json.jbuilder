@@ -7,3 +7,5 @@ json.author do
 end
 
 json.average_rating @review.product.average_rating
+
+json.total_reviews @review.product.total_reviews

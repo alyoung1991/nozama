@@ -10,11 +10,12 @@ class ProductIndexItem extends React.Component {
 
     handleClick(){
         const productId = this.props.product.id;
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.props.history.push(`/products/${productId}`);
     }
 
     render(){
-        const {name, price, picture_url, average_rating} = this.props.product;
+        const {name, price, picture_url, average_rating, total_reviews} = this.props.product;
 
         const eta = new Date();
         eta.setDate(eta.getDate() + 2);
@@ -23,24 +24,30 @@ class ProductIndexItem extends React.Component {
         const dollarsCents = price.toString().split(".");
         const dollars = dollarsCents[0];
         const cents = dollarsCents[1];
+        const totalReviews = total_reviews ? total_reviews : 0;
+        const averagRating = average_rating ? average_rating : 3.0;
         return(
             <div className="product-card">
                 <div className="product-card-top-border"></div>
                 <img className="product-card-image" src={picture_url} alt={name} onClick={this.handleClick} />
                 <div className="product-card-title" onClick={this.handleClick}>{name}</div>
                 <div className="product-card-rating">
-                    {[...Array(5)].map((star, i) => {
-                        const ratingValue = i + 1;
-                        const averagRating = average_rating ? average_rating : 3.0;
-                        return (
-                            <FaStar 
-                                key={i}
-                                className="star" 
-                                color={ratingValue <= ( averagRating ) ? "#ffa41b" : "#c9c9c9"} 
-                                size={15}
-                            />
-                        );
-                    })}
+                    <div className="product-card-rating-stars">
+                        {[...Array(5)].map((star, i) => {
+                            const ratingValue = i + 1;
+                            return (
+                                <FaStar 
+                                    key={i}
+                                    className="star" 
+                                    color={ratingValue <= ( averagRating ) ? "#ffa41b" : "#c9c9c9"} 
+                                    size={15}
+                                />
+                            );
+                        })}
+                    </div>
+                    <div className="product-card-total-reviews">
+                        {totalReviews}
+                    </div>
                 </div>
                 <div className="product-card-price" onClick={this.handleClick}>
                     <span className="dollar-sign">$</span><span className="price-dollars">{dollars}</span><span className="price-cents">{cents}</span>

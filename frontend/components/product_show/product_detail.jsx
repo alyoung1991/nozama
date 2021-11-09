@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaStar } from 'react-icons/fa';
+import { withRouter } from 'react-router-dom';
 import ReviewListItemContainer from './review_list_item_container';
 
 class ProductDetail extends React.Component {
@@ -61,9 +62,9 @@ class ProductDetail extends React.Component {
                     <div className="product-main-section">
                         <div className="return-row">
                             <div className="return-link-row">
-                                <Link className="nav-back-button" to="/">
+                                <div className="nav-back-button" onClick={this.props.history.goBack}>
                                     <div>Back to results</div>
-                                </Link>
+                                </div>
                             </div>
                         </div>
                         <div className="main-row">
@@ -165,4 +166,4 @@ class ProductDetail extends React.Component {
     
 };
 
-export default ProductDetail;
+export default withRouter(ProductDetail);

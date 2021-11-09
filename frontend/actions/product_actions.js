@@ -17,11 +17,12 @@ const receiveProduct = ({product, reviews, authors}) => ({
     authors
 });
 
-const receiveReview = ({ review, average_rating, author }) => ({
+const receiveReview = ({ review, average_rating, author, total_reviews }) => ({
     type: RECEIVE_REVIEW,
     review,
     average_rating,
-    author
+    author,
+    total_reviews
 });
 
 const receiveReviews = (reviews) => ({

@@ -298,12 +298,14 @@ b {
 
 .products-container {
     width: 80%;
+    min-width: 762px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .product-card {
     width: 21%;
+    min-width: 230px;
     height: 500px;
     margin: 0 12px;
     display: flex;
@@ -341,7 +343,20 @@ b {
 }
 
 .product-card-rating {
+    font-size: 14px;
+    line-height: 20px;
+    color: $amazon-link-blue;
     padding-top: 4px;
+    display: flex;
+    align-items: center;
+
+    .product-card-rating-stars {
+        padding-right: 5px;
+    }
+
+    .product-card-total-reviews {
+        padding-bottom: 4px;
+    }
 }
 
 .product-card-price {

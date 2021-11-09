@@ -10,10 +10,11 @@ const productsReducer = (state = {}, action) => {
             const newProduct = { [action.product.id]: action.product };
             return Object.assign({}, state, newProduct);
         case RECEIVE_REVIEW:
-            const { review, average_rating } = action;
+            const { review, average_rating, total_reviews } = action;
             const newState = Object.assign({}, state);
             newState[review.product_id].reviewIds.push(review.id);
             newState[review.product_id].average_rating = average_rating;
+            newState[review.product_id].total_reviews = total_reviews;
             return newState;
         default:
             return state;

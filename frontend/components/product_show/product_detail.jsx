@@ -1,8 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ReviewListItemContainer from './review_list_item_container';
 
-const ProductDetail = ({product}) => {
+const ProductDetail = ({product, reviews}) => {
     if(!product) return null;
+
+    const reviewList = (reviews) => {
+        return reviews.map(review => (
+            <ReviewListItemContainer
+                review={review}
+                key={review.id}
+            />
+        ))
+    };
+
     const aboutThisItemArray = product.description.split("//");
     const priceFormatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
@@ -112,6 +123,11 @@ const ProductDetail = ({product}) => {
                     </div>
                     
                 </div>
+            </div>
+
+            <div className="reviews">
+                <h3>Reviews</h3>
+                {reviewList(reviews)}
             </div>
             
         </div>

@@ -1,9 +1,10 @@
 import { connect } from "react-redux";
 import { updateFilter } from "../../actions/filter_actions";
+import { asArray } from '../../reducers/selectors';
 import Search from "./search";
 
 const mapStateToProps = (state) => ({
-    products: Object.values(state.entities.products),
+    products: asArray(state.entities),
     department: state.ui.filters.department
 })
 

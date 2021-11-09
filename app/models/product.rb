@@ -13,7 +13,13 @@
 #
 class Product < ApplicationRecord
     # validates :name, :description, :price, presence: true
+    has_many :reviews
+
     def self.search_query_match(query)
         self.where("LOWER(name) LIKE ?", "%" + query.downcase + "%")
+    end
+
+    def average_rating
+        reviews.average(:rating)
     end
 end

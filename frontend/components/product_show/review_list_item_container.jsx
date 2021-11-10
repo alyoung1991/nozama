@@ -42,12 +42,13 @@ const Review = ({ review, author, currentUser, productId, updateReview, destroyR
             <div className="review-body">{body}</div>
             {(currentUser && currentUser.id === author.id) ? (
                 <div className="review-crud-buttons">
-                    <ReviewLink
-                        className="edit-review-button"
-                        component={EditReviewFormContainer}
-                        to={`/products/${productId}/review/${id}/edit`}
-                        label="Edit"
-                    />
+                    <button className="edit-review-button">
+                        <ReviewLink
+                            component={EditReviewFormContainer}
+                            to={`/products/${productId}/review/${id}/edit`}
+                            label="Edit">
+                        </ReviewLink>
+                    </button>
                     <button className="delete-review-button" onClick={() => destroyReview(review)}>Delete</button>
                     <div className="crud-button-border"></div>
                 </div>

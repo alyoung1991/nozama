@@ -22,6 +22,7 @@ b {
     background-color: $amazon-sub-nav-blue;
     color: $nav-text-color;
     width: 100%;
+    min-width: 1144px;
     height: 39px;
     font-size: 14px;
     display: flex;
@@ -316,6 +317,12 @@ b {
 .shadow {
     height: 80px;
     background: radial-gradient(closest-corner at 50% -50%,rgba(0, 0, 0, 0.25),white);
+}
+
+.error-message {
+    font-size: 12px;
+    line-height: 15px;
+    color: $error-message-red;
 }
 
 
@@ -768,10 +775,11 @@ b {
     display: flex;
     align-items: center;
 
-    button {
+    .edit-review-button, .delete-review-button {
         font-size: 12px;
         line-height: 20px;
-        width: 92px;
+        text-decoration: none;
+        width: 92px!important;
         background-color: white;
         border: 1px solid $product-show-checkout-border-color;
         border-radius: 8px;
@@ -780,6 +788,14 @@ b {
         &:hover {
             cursor: pointer;
             background-color: #F7FAFA;
+        }
+    }
+
+    .review-link{
+        a {
+            width: 100%;
+            text-decoration: none!important;
+            color: black;
         }
     }
 

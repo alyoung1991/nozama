@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaStar } from 'react-icons/fa';
 import { withRouter } from 'react-router-dom';
 import ReviewListItemContainer from './review_list_item_container';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import ProductManager from '../../util/product_manager';
 
 class SearchBar extends React.Component {
     constructor(props){

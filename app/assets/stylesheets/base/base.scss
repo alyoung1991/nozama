@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: $amazon-dark-blue;

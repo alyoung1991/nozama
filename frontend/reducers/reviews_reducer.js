@@ -6,7 +6,11 @@ const reviewsReducer = (state = {}, action) => {
         case RECEIVE_PRODUCT:
             return Object.assign({}, state, action.reviews);
         case RECEIVE_REVIEW:
-            return Object.assign({}, state, {[action.review.id]: action.review});
+            if(action.review){
+                return Object.assign({}, state, {[action.review.id]: action.review});
+            } else{
+                return Object.assign({}, state);
+            }
         default:
             return state;
     }

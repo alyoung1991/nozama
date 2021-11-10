@@ -4,8 +4,10 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ProductIndexContainer from "./product_index/product_index_container";
 import ProductShowContainer from './product_show/product_show_container';
+import CreateReviewFormContainer from "./product_show/create_review_form_container";
+import EditReviewFormContainer from "./product_show/edit_review_form_container";
 import { Switch, Route, useLocation } from 'react-router-dom';
-import { AuthRoute } from "../util/route_util";
+import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
                 <AuthRoute exact path="/login" component={LoginFormContainer} />
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <Route exact path="/products" component={ProductIndexContainer} />
+                <ProtectedRoute path="/products/:productId/review/new" component={CreateReviewFormContainer} />
+                <ProtectedRoute path="/products/:productId/review/:reviewId/edit" component={EditReviewFormContainer} />
                 <Route path="/products/:productId" component={ProductShowContainer} />
                 {/* redirect back to / OR 404 */}
             </Switch>

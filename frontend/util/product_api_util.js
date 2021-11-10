@@ -12,6 +12,13 @@ export const fetchProduct = (id) => (
     })
 );
 
+export const fetchReview = (reviewId) => (
+    $.ajax({
+        method: 'GET',
+        url: `api/reviews/${reviewId}`
+    })
+);
+
 export const createReview = (review) => (
     $.ajax({
         method: 'POST',
@@ -20,17 +27,24 @@ export const createReview = (review) => (
     })
 );
 
-export const fetchReviews = (productId) => (
+export const updateReview = (review) => (
     $.ajax({
-        method: 'GET',
-        url: 'api/reviews',
-        data: { 'product_id': productId }
+        method: 'PATCH',
+        url: `api/reviews/${review.id}`,
+        data: {review}
     })
-)
+);
+
+export const destroyReview = (review) => (
+    $.ajax({
+        method: 'DELETE',
+        url: `api/reviews/${review.id}`
+    })
+);
 
 export const fetchAuthor = (userId) => (
     $.ajax({
         method: 'GET',
         url: `api/users/${userId}`,
     })
-)
+);

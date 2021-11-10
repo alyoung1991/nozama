@@ -707,6 +707,7 @@ b {
 .review-item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 22px;
 }
 
 .review-author-section {
@@ -730,6 +731,16 @@ b {
     font-weight: $bold;
     font-size: 14px;
     line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    .review-rating {
+        padding-right: 10px;
+    }
+
+    .review-title {
+        padding-bottom: 4px;
+    }
 }
 
 .review-date {
@@ -750,6 +761,40 @@ b {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 8px;
+}
+
+.review-crud-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    button {
+        font-size: 12px;
+        line-height: 20px;
+        width: 92px;
+        background-color: white;
+        border: 1px solid $product-show-checkout-border-color;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px #efefef;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #F7FAFA;
+        }
+    }
+
+    .edit-review-button {
+        margin-right: 5px;
+    }
+
+    .delete-review-button {
+        margin-right: 15px;
+    }
+
+    .crud-button-border {
+        height: 20px;
+        border-left: 1px solid $product-card-border-color;
+    }
 }
 
 input[type="radio"] {

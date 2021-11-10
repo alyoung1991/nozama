@@ -8,11 +8,16 @@ class ReviewForm extends React.Component {
         this.state = this.props.review;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.navigateToProductShow = this.navigateToProductShow.bind(this);
+        this.updateRating = this.updateRating.bind(this);
     }
 
     navigateToProductShow() {
         const url = `/products/${this.props.match.params.productId}`
         this.props.history.push(url);
+    }
+
+    handleRatingChange(rating){
+        this.setState({rating: rating});
     }
 
     handleSubmit(e) {
@@ -27,6 +32,10 @@ class ReviewForm extends React.Component {
 
     handelInput(field) {
         return e => this.setState({ [field]: e.currentTarget.value });
+    }
+
+    updateRating(rating) {
+        this.setState({ 'rating': rating });
     }
 
     render() {
@@ -47,7 +56,7 @@ class ReviewForm extends React.Component {
                             value={this.state.rating}
                             onChange={this.handelInput("rating")}
                         /> */}
-                        <StarRating />
+                        <StarRating updateRating={this.updateRating} />
                     </div>
 
                     <div className="review-form-headline-section">

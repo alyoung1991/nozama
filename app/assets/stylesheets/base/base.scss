@@ -797,11 +797,139 @@ b {
     }
 }
 
+.review-form-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-form {
+    width: 768px;
+    padding: 20px 18px 0 18px;
+
+    .review-form-heading {
+        font-weight: $bold;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 13px 0 16px 0;
+    }
+
+    .review-form-product-info {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $product-row-border-color;
+        padding-bottom: 16px;
+
+        .review-form-product-img-container {
+            width: 62px;
+            display: flex;
+            justify-content: center;
+
+            .review-form-product-img {
+                height: 62px;
+                margin: 0 20px;
+            }
+        }
+
+        .review-form-product {
+            font-size: 14px;
+            line-height: 20px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-left: 10px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .review-form-overall-rating-section{
+        border-bottom: 1px solid $product-row-border-color;
+        padding-bottom: 16px;
+
+        .review-form-rating-heading {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: $bold;
+            padding: 14px 0 8px 0;
+        }
+    }   
+
+    .review-form-headline-section {
+        border-bottom: 1px solid $product-row-border-color;
+
+        .review-form-headline-heading {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: $bold;
+            padding: 14px 0;
+        }
+
+        .review-form-headline-input {
+            width: 752px!important;
+            height: 31px!important;
+            padding: 3px 7px;
+            margin-bottom: 24px;
+            border: 1px solid $review-form-input-border-color;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    }
+
+    .review-form-body-section {
+        .review-form-body-heading {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: $bold;
+            padding: 14px 0;
+        }
+
+        .review-form-body-input {
+            width: 752px!important;
+            height: 130px!important;
+            padding: 5px 7px;
+            margin-bottom: 24px;
+            border: 1px solid $review-form-input-border-color;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .review-form-submit-button-section {
+        width: 768px;
+        display: flex;
+        justify-content: flex-end;
+
+        .review-form-submit-button {
+            height: 31px;
+            width: 65px;
+            background-color: $review-form-submit-btn-bg-color;
+            border: 1px solid $review-form-submit-btn-border-color;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #d7d7d7;
+            font-size: 14px;
+            line-height: 20px;
+            align-self: flex-end;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #F7CA00;
+            }
+        }
+    }
+
+    
+}
+
+
 input[type="radio"] {
     display: none;
 }
 
-// .star {
-//     cursor: pointer;
-//     transition: color 200ms;
-// }
+.star {
+    cursor: pointer;
+    transition: color 200ms;
+}

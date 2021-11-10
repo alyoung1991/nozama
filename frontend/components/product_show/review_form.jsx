@@ -31,41 +31,50 @@ class ReviewForm extends React.Component {
 
     render() {
         return (
-            <div className="review-form">
-                <div>{this.props.formType}</div>
-                <form onSubmit={this.handleSubmit}>
-                    <label>Rating</label>
-                    <br/>
-                    <input
-                        type="number"
-                        value={this.state.rating}
-                        onChange={this.handelInput("rating")}
-                    />
-                    {/* <StarRating /> */}
-                    <br/>
+            <div className="review-form-container">
+                <form className="review-form" onSubmit={this.handleSubmit}>
+                    <div className="review-form-heading">{this.props.formType}</div>
+                    <div className="review-form-product-info">
+                        <div className="review-form-product-img-container">
+                            <img className="review-form-product-img" src={this.props.product.picture_url} alt="product-thumbnail" />
+                        </div>
+                        <div className="review-form-product">{this.props.product.name}</div>
+                    </div>
+                    <div className="review-form-overall-rating-section">
+                        <div className="review-form-rating-heading">Overall rating</div>
+                        {/* <input
+                            type="number"
+                            value={this.state.rating}
+                            onChange={this.handelInput("rating")}
+                        /> */}
+                        <StarRating />
+                    </div>
 
-                    <label>Headline</label>
-                    <br/>
-                    <input
-                        type="text"
-                        value={this.state.headline}
-                        onChange={this.handelInput("headline")}
-                    />
-                    <br/>
+                    <div className="review-form-headline-section">
+                        <div className="review-form-headline-heading">Add a headline</div>
+                        <input
+                            className="review-form-headline-input"
+                            type="text"
+                            value={this.state.headline}
+                            onChange={this.handelInput("headline")}
+                            placeholder="What's most important to know?"
+                        />
+                    </div>
 
-                    <label>Body</label>
-                    <br/>
+                    <div className="review-form-body-section">
+                        <div className="review-form-body-heading">Add a written review</div>
 
-                    <textarea
-                        cols="30"
-                        rows="10"
-                        value={this.state.body}
-                        onChange={this.handelInput("body")}
-                    />
-                    <br/>
-                    <input type="submit" />
+                        <textarea
+                            className="review-form-body-input"
+                            value={this.state.body}
+                            onChange={this.handelInput("body")}
+                            placeholder="What did you like or dislike? What did you use this product for?"
+                        />
+                    </div>
+                    <div className="review-form-submit-button-section">
+                        <input className="review-form-submit-button" type="submit" />
+                    </div>
                 </form>
-                <button onClick={this.navigateToProductShow}>Cancel</button>
             </div>
         );
     }

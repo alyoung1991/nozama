@@ -1,4 +1,4 @@
-import { RECEIVE_PRODUCT, RECEIVE_REVIEW, RECEIVE_REVIEWS } from '../actions/product_actions';
+import { RECEIVE_PRODUCT, RECEIVE_REVIEW } from '../actions/product_actions';
 
 const reviewsReducer = (state = {}, action) => {
     Object.freeze(state);
@@ -7,8 +7,6 @@ const reviewsReducer = (state = {}, action) => {
             return Object.assign({}, state, action.reviews);
         case RECEIVE_REVIEW:
             return Object.assign({}, state, {[action.review.id]: action.review});
-        case RECEIVE_REVIEWS:
-            return action.reviews
         default:
             return state;
     }

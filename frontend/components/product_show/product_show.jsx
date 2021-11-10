@@ -1,9 +1,7 @@
 import React from 'react';
 import ProductDetail from './product_detail';
-import ReviewFormContainer from './review_form_container';
-import { ProtectedRoute } from '../../util/route_util';
+import CreateReviewFormContainer from './create_review_form_container';
 import { ReviewLink } from '../../util/link_util';
-import { selectReviewsForProduct } from "../../reducers/selectors";
 
 class ProductShow extends React.Component{
     constructor(props){
@@ -15,18 +13,14 @@ class ProductShow extends React.Component{
     }
 
     render(){
-        const { product, productId, reviews, fetchReviews } = this.props;
+        const { product, productId, reviews } = this.props;
         return (
             <div>
-                <ProductDetail product={product} reviews={reviews} fetchReviews={fetchReviews} />
+                <ProductDetail product={product} reviews={reviews} />
                 <ReviewLink
-                    component={ReviewFormContainer}
-                    to={`/products/${productId}/review`}
-                    label="Leave a Review"
-                />
-                <ProtectedRoute
-                    path="/products/:productId/review"
-                    component={ReviewFormContainer}
+                    component={CreateReviewFormContainer}
+                    to={`/products/${productId}/review/new`}
+                    label="Write a customer review"
                 />
             </div>
         );

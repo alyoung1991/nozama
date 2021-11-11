@@ -1,10 +1,14 @@
 Product.delete_all
 User.delete_all
 Review.delete_all
+CartItem.delete_all
+Cart.delete_all
 
 ActiveRecord::Base.connection.reset_pk_sequence!("products")
 ActiveRecord::Base.connection.reset_pk_sequence!("users")
 ActiveRecord::Base.connection.reset_pk_sequence!("reviews")
+ActiveRecord::Base.connection.reset_pk_sequence!("cart_items")
+ActiveRecord::Base.connection.reset_pk_sequence!("carts")
 
 # product seeds:
 

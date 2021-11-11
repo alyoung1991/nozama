@@ -14,6 +14,7 @@
 class Product < ApplicationRecord
     # validates :name, :description, :price, presence: true
     has_many :reviews
+    has_many :cart_items
 
     def self.search_query_match(query)
         self.where("LOWER(name) LIKE ?", "%" + query.downcase + "%")

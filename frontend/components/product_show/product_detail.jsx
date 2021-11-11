@@ -4,6 +4,30 @@ import { withRouter } from 'react-router-dom';
 import ReviewListItemContainer from './review_list_item_container';
 
 class ProductDetail extends React.Component {
+    constructor(props){
+        super(props);
+
+        this.addProductToCart = this.addProductToCart.bind(this);
+    }
+
+    componentDidMount(){
+        if(this.props.sessionId){
+            this.props.fetchCart(1, this.props.sessionId);
+        }
+    }
+
+    addProductToCart(product){
+        const cartId = Object.values(window.getState().entities.carts)[0].id;
+        console.log(product.id);
+        const cartItem = {
+            "quantity": 1,
+            "product_id": product.id,
+            "cart_id": cartId
+        }
+        this.props.createCartItem(cartItem);
+        this.props.fetchCart(1, this.props.sessionId);
+    }
+
     render(){
         let {product, reviews} = this.props;
 
@@ -129,7 +153,7 @@ class ProductDetail extends React.Component {
                                     <option value="9">9</option>
                                 </select>
                                 <div className="checkout-buttons">
-                                    <button className="add-to-cart-button">Add to Cart</button>
+                                    <button onClick={() => this.addProductToCart(product)} className="add-to-cart-button">Add to Cart</button>
                                 </div>
                                 <div className="secure-transaction-section">
                                     <i className="fas fa-lock"></i>

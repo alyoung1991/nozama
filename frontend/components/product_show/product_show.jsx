@@ -13,10 +13,10 @@ class ProductShow extends React.Component{
     }
 
     render(){
-        const { product, productId, reviews } = this.props;
+        const { product, productId, reviews, sessionId, fetchCart, createCartItem } = this.props;
         return (
             <div>
-                <ProductDetail product={product} reviews={reviews} />
+                <ProductDetail product={product} reviews={reviews} sessionId={sessionId} fetchCart={fetchCart} createCartItem={createCartItem} />
                 <ReviewLink
                     component={CreateReviewFormContainer}
                     to={`/products/${productId}/review/new`}

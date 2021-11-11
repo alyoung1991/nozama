@@ -10,6 +10,12 @@ class NavBar extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    componentDidMount(){
+        if(this.props.sessionId){
+            this.props.fetchCart(1, this.props.sessionId);
+        }
+    }
+
     handleClick(department){
         this.props.history.push({
             pathname: '/products/',

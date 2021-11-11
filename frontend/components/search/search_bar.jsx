@@ -12,8 +12,8 @@ class SearchBar extends React.Component {
             department: this.department
         };
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.props.updateFilter('department', this.state.department);
         this.props.updateFilter('query', this.state.query);
+        this.props.updateFilter('department', this.state.department);
     }
 
     componentDidMount(){
@@ -34,13 +34,21 @@ class SearchBar extends React.Component {
 
     handleSubmit(e){
         e.preventDefault();
-        this.props.history.push({
-            pathname: '/products/',
-            search: `q=${this.state.query}+d=${this.state.department}`
-        });
-
-        this.props.updateFilter('department', this.state.department);
         this.props.updateFilter('query', this.state.query);
+        this.props.updateFilter('department', this.state.department);
+
+        if(this.state.department === 'All' && this.state.query === ''){
+            this.props.history.push({
+                pathname: '/'
+            });
+        } else {
+            this.props.history.push({
+                pathname: '/products/',
+                search: `q=${this.state.query}+d=${this.state.department}`
+            });
+
+            
+        }
     }
 
     handleInput(filter){

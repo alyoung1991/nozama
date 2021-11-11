@@ -7,7 +7,6 @@ const defaultFilters = Object.freeze({
 
 const filterReducer = (state = defaultFilters, action) => {
     Object.freeze(state);
-
     switch(action.type){
         case UPDATE_SEARCH_QUERY:
             const newQuery =  {

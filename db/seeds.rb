@@ -1251,8 +1251,8 @@ u3 = User.create!(
 
 1000.times do
     Review.create!(
-        headline: Faker::Lorem.words(number: rand(4..8).to_i).join(" "),
-        body: Faker::Lorem.words(number: rand(40..60).to_i).join(" "),
+        headline: Faker::Hipster.sentence,
+        body: Faker::Hipster.paragraph(sentence_count: rand(2..12)),
         rating: rand(1..5).to_i,
         product_id: rand(1..10).to_i,
         author_id: rand(1..4).to_i

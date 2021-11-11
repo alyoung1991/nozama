@@ -51,11 +51,6 @@ class ReviewForm extends React.Component {
                     </div>
                     <div className="review-form-overall-rating-section">
                         <div className="review-form-rating-heading">Overall rating</div>
-                        {/* <input
-                            type="number"
-                            value={this.state.rating}
-                            onChange={this.handelInput("rating")}
-                        /> */}
                         <StarRating updateRating={this.updateRating} />
                     </div>
 

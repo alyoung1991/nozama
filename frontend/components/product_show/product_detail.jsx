@@ -17,13 +17,16 @@ class ProductDetail extends React.Component {
     }
 
     addProductToCart(product){
+        const quantity = parseInt(document.querySelector('.quantity-select').value);
         const cartId = this.props.sessionId;
         const cartItem = {
             "quantity": 1,
             "product_id": product.id,
             "cart_id": cartId
         }
-        this.props.createCartItem(cartItem);
+        for(let i = 0; i < quantity; i++){
+            this.props.createCartItem(cartItem);
+        }
         this.props.fetchCart(1, this.props.sessionId);
         this.props.history.push({
             pathname: '/cart/'

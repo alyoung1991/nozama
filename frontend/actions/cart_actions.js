@@ -18,8 +18,8 @@ export const fetchCart = (id, sessionId) => (dispatch) => (
         .then((payload) => dispatch(receiveCart(payload)))
 );
 
-export const createCart = cart => dispatch => (
-    APIUtil.createCart(cart)
+export const createCart = (cart, sessionId) => dispatch => (
+    APIUtil.createCart(cart, sessionId)
         .then((cart) => dispatch(receiveCart(cart)))
 );
 

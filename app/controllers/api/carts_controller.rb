@@ -1,7 +1,9 @@
 class Api::CartsController < ApplicationController
+    before_action :ensure_logged_in
+    
     def show
         if(params[:session_id])
-            @cart = Cart.find_by(session_id: params[:session_id])
+            @cart = Cart.find_or_create_by(session_id: params[:session_id])
             render :show
         else
             render json: @cart, status: :unprocessable_entity
@@ -10,7 +12,6 @@ class Api::CartsController < ApplicationController
 
     def create
         @cart = Cart.new(cart_params)
-
         if @cart.save
             render :show
         else

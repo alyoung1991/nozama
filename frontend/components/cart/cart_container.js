@@ -2,10 +2,13 @@ import { connect } from 'react-redux';
 import { createCart, fetchCart, deleteCart } from '../../actions/cart_actions';
 import Cart from './cart';
 
-const mapStateToProps = (state) => ({
-    cart: state.entities.carts[state.session.id],
-    sessionId: state.session.id
-});
+const mapStateToProps = (state) => {
+    const newState = getState();
+    return {
+        cart: newState.entities.carts[state.session.id],
+        sessionId: state.session.id
+    }
+};
 
 const mapDispatchToProps = (dispatch) => ({
     createCart: cart => dispatch(createCart(cart)),

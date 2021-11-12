@@ -13,14 +13,4 @@ class Cart < ApplicationRecord
         foreign_key: :cart_id,
         class_name: :CartItem,
         dependent: :destroy
-
-    def add_product(product)
-        current_cart_item = cart_items.find_by(product_id: product.id)
-        if current_cart_item
-            current_cart_item.increment(:quantity)
-        else
-            current_cart_item = cart_items.build(product_id: product.id)
-        end
-        current_cart_item
-    end
 end

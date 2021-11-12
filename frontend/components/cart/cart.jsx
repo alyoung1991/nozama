@@ -5,9 +5,11 @@ class Cart extends React.Component {
         if(this.props.sessionId){
             this.props.fetchCart(1, this.props.sessionId);
         }
+        this.setState({});
     }
 
     render(){
+        this.props.fetchCart(1, this.props.sessionId);
         const {cart} = this.props;
         let subTotal = 0;
         let numItems = 0;
@@ -23,6 +25,7 @@ class Cart extends React.Component {
         });
         const subTotalString = priceFormatter.format(subTotal);
         return ((cart) ? (
+            (cart.cart_items.length > 0) ? (
             <div className="cart">
                 <div className="cart-container">
                     <div className="cart-heading">Shopping Cart</div>
@@ -50,6 +53,13 @@ class Cart extends React.Component {
                     <></>
                 )}
             </div>
+            ) : (
+                <div className="cart">
+                    <div className="cart-container">
+                        <div className="cart-heading">Your Nozama Cart is empty.</div>
+                    </div>
+                </div>
+            )
         ) : (
             <div className="cart">
                 <div className="cart-container">

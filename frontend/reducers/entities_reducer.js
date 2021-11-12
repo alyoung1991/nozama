@@ -5,10 +5,10 @@ import reviewsReducer from "./reviews_reducer";
 import cartsReducer from "./carts_reducer";
 
 const entitiesReducer = combineReducers({
+    carts: cartsReducer,
     users: usersReducer,
     products: productsReducer,
-    reviews: reviewsReducer,
-    carts: cartsReducer
+    reviews: reviewsReducer
 });
 
 export default entitiesReducer;

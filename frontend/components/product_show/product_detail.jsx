@@ -17,8 +17,7 @@ class ProductDetail extends React.Component {
     }
 
     addProductToCart(product){
-        const cartId = Object.values(window.getState().entities.carts)[0].id;
-        console.log(product.id);
+        const cartId = this.props.sessionId;
         const cartItem = {
             "quantity": 1,
             "product_id": product.id,
@@ -26,6 +25,9 @@ class ProductDetail extends React.Component {
         }
         this.props.createCartItem(cartItem);
         this.props.fetchCart(1, this.props.sessionId);
+        this.props.history.push({
+            pathname: '/cart/'
+        });
     }
 
     render(){

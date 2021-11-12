@@ -8,11 +8,12 @@ class NavBar extends React.Component {
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.navigateToCart = this.navigateToCart.bind(this);
     }
 
     componentDidMount(){
         if(this.props.sessionId){
-            this.props.fetchCart(1, this.props.sessionId);
+            this.props.fetchCart(1, this.props.sessionId)
         }
     }
 
@@ -22,6 +23,12 @@ class NavBar extends React.Component {
             search: `q=+d=${department}`
         });
         this.props.updateFilter('department', department);
+    }
+
+    navigateToCart(){
+        this.props.history.push({
+            pathname: '/cart/'
+        });
     }
 
     render(){
@@ -53,7 +60,7 @@ class NavBar extends React.Component {
                             <div className="signout-button">& Orders</div>
                         </div>
                     </div>
-                    <div className="nav-cart">
+                    <div className="nav-cart" onClick={() => this.navigateToCart()}>
                         <div className="nav-cart-icon"><i className="fas fa-shopping-cart"></i></div>
                         <div className="nav-cart-label">Cart</div>
                     </div>

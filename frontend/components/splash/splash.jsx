@@ -9,7 +9,25 @@ const Splash = () => {
 
             <div className="splash-cards">
                 <div className="splash-cards-container">
-                    <div className="splash-card"></div>
+                    <div className="splash-card">
+                        <div className="splash-card-heading">You can call it anything!</div>
+                        <div className="splash-card-image-container">
+                            <img className="splash-card-image" src={window.potato} alt="I called it Potato" />
+                        </div>
+                        <div className="black-friday-deal-label">
+                            <div>Early Black Friday</div>
+                        </div>
+                        <div className="splash-card-price">
+                            <div className="deal-price">
+                                <div className="dollar-sign">$</div>
+                                <div className="deal-dollar">1</div>
+                                <div className="deal-cents">95</div>
+                            </div>
+                            <div className="original-price">$2.95</div>
+                        </div>
+                        <div className="splash-card-info">Potato</div>
+                        <div className="splash-card-link">Shop for some more potato</div>
+                    </div>
                     <div className="splash-card">
                         <div className="splash-card-heading">Early Black Friday deal</div>
                         <div className="splash-card-image-container">

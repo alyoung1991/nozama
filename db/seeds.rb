@@ -137,9 +137,19 @@ Product.create!(
     description: 'You can name it anything
     // You can name it Banana
     // Potato',
-    price: 4.95,
+    price: 1.99,
     department: 'Grocery & Gourmet Food',
     picture_url: 'https://m.media-amazon.com/images/I/21DejQuoT2L.jpg'
+)
+
+Product.create!(
+    name: 'Potato',
+    description: 'You can name it anything
+    // You can call it Potato
+    // Banana',
+    price: 1.95,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/616XH4EmfML._SX679_.jpg'
 )
 
 # Appliances:

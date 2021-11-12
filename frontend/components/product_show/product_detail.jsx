@@ -2,6 +2,8 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { withRouter } from 'react-router-dom';
 import ReviewListItemContainer from './review_list_item_container';
+import CreateReviewFormContainer from './create_review_form_container';
+import { ReviewLink } from '../../util/link_util';
 
 class ProductDetail extends React.Component {
     constructor(props){
@@ -34,7 +36,7 @@ class ProductDetail extends React.Component {
     }
 
     render(){
-        let {product, reviews} = this.props;
+        let {product, reviews, productId} = this.props;
 
         if(Object.keys(product).length <= 1)
             return null;
@@ -183,6 +185,20 @@ class ProductDetail extends React.Component {
                 </div>
                 <div className="product-show-row-divider"></div>
                 <div className="product-reviews-row">
+                    <div className="product-review-container">
+                        <div className="product-review-container-heading">Review this product</div>
+                        <div className="product-review-container-subheading">Share your thoughts with other customers</div>
+                        <div className="create-product-review-button-container">
+                            <ReviewLink
+                                className="create-product-review-button"
+                                component={CreateReviewFormContainer}
+                                to={`/products/${productId}/review/new`}
+                                label="Write a customer review"
+                            />
+                        </div>
+                        
+                    </div>
+                    
                     <div className="product-review-right-col">
                         <div className="reviews-heading">Customer reviews</div>
                         {reviewList(reviews).length === 0 ? 'No Reviews' : reviewList(reviews)}

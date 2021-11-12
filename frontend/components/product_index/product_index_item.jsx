@@ -28,8 +28,9 @@ class ProductIndexItem extends React.Component {
         const averagRating = average_rating ? average_rating : 3.0;
         return(
             <div className="product-card">
-                <div className="product-card-top-border"></div>
-                <img className="product-card-image" src={picture_url} alt={name} onClick={this.handleClick} />
+                <div className="product-card-image-container" onClick={this.handleClick}>
+                    <img className="product-card-image" src={picture_url} alt={name} />
+                </div>
                 <div className="product-card-title" onClick={this.handleClick}>{name}</div>
                 <div className="product-card-rating">
                     <div className="product-card-rating-stars">

@@ -1260,7 +1260,7 @@ cart3 = Cart.create!(session_id: 4)
 
 10000.times do
     Review.create!(
-        headline: Faker::Hipster.sentence,
+        headline: Faker::Hipster.words(number: 7).join(" "),
         body: Faker::Hipster.paragraph(sentence_count: rand(2..12)),
         rating: rand(1..5).to_i,
         product_id: rand(1..100).to_i,

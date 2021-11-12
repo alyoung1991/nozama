@@ -132,6 +132,16 @@ Product.create!(
     picture_url: 'https://m.media-amazon.com/images/I/71Og586RJCL._AC_SL1500_.jpg'
 )
 
+Product.create!(
+    name: 'Banana',
+    description: 'You can name it anything
+    // You can name it Banana
+    // Potato',
+    price: 4.95,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/21DejQuoT2L.jpg'
+)
+
 # Appliances:
 Product.create!(
     name: 'FRIGIDAIRE EFIC101-BLACK Portable Compact Maker, 26 lb per Day, Ice Making Machine, Black',

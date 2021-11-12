@@ -4,7 +4,6 @@ import ProductIndexItem from "./product_index_item";
 class ProductIndex extends React.Component {
     render(){
         const searchTerm = this.props.location.search.substring(3, this.props.location.search.indexOf('+'));
-        console.log(this.props.location.search.substring(3, this.props.location.search.indexOf('+')));
         const searchTermDisplay = <span>&nbsp;for <span className="search-term-display">"{searchTerm}"</span></span>;
         return(
             <div className="product-index-container">
@@ -15,7 +14,6 @@ class ProductIndex extends React.Component {
                     })}
                 </div>
             </div>
-           
         );
     }
 }

@@ -351,12 +351,160 @@ b {
     .splash-cards {
         width: 100%;
         min-width: 1144px;
-        height: 900px;
-        transform: translateY(-200px);
+        height: 880px;
+        transform: translateY(-310px);
         z-index: 2;
         // generated using https://cssgradient.io/
         background: rgb(234,237,237);
-        background: linear-gradient(0deg, rgba(234,237,237,1) 0%, rgba(234,237,237,1) 80%, rgba(255,255,255,0) 100%);    
+        background: linear-gradient(0deg, rgba(234,237,237,1) 0%, rgba(234,237,237,1) 70%, rgba(255,255,255,0) 100%);
+        
+        .splash-cards-container {
+            width: 100%;
+            min-width: 1144px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: $amazon-dark-blue;
+
+            .splash-card {
+                width: 267px;
+                height: 380px;
+                background-color: $nav-text-color;
+                padding: 20px;
+                margin: 16px 12px;
+            }
+
+            .double-splash-card {
+                .sub-splash-card{
+                    width: 267px;
+                    height: 110px;
+                    padding: 20px;
+                    margin: 16px 12px 12px 12px;
+                    background-color: $nav-text-color;
+                }
+
+                .hidden-card {
+                    visibility: hidden;
+                }
+            }
+
+            .splash-card-heading {
+                font-size: 21px;
+                line-height: 27px;
+                font-weight: $bold;
+                margin-bottom: 10px;
+            }
+
+            .splash-card-image-container {
+                height: 220px;
+                width: 255px;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .splash-card-image {
+                    max-width: 100%;
+                    max-height: 220px;
+                    object-fit: contain;
+                    margin: 0 12px;
+                    align-self: center;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .black-friday-deal-label {
+                background-color: #b12704;
+                color: $nav-text-color;
+                font-size: 12px;
+                height: 24px;
+                width: 110px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 4px;
+            }
+
+            .splash-card-price {
+                display: flex;
+                font-size: 13px;
+                margin-bottom: 4px;
+
+                .deal-price {
+                    font-size: 12px;
+                    display: flex;
+                    align-items: flex-start;
+                    margin-right: 10px;
+
+                    .dollar-sign, .deal-cents {
+                        padding-top: 2px;
+                    }
+
+                    .deal-dollar{
+                        font-size: 22px;
+                    }
+                }
+
+                .original-price {
+                    color: #767676;
+                    text-decoration: line-through;
+                    align-self: flex-end;
+                }
+                
+            }
+
+            .splash-card-info {
+                font-size: 13px;
+                line-height: 19px;
+                margin-bottom: 16px;
+            }
+
+            .sub-card-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 28px;
+
+                .sub-card {
+                    height: 120px;
+                    width: 120px;
+                    background-color: #479576;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .splash-card-link {
+                font-size: 13px;
+                line-height: 19px;
+                color: $amazon-link-blue;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: $product-card-title-hover;
+                }
+            }
+
+            .appear-on-grow {
+                visibility: hidden;
+            }
+
+            @media only screen and (max-width: 1338px) {
+                .hide-on-shrink {
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 1670px) {
+                .appear-on-grow {
+                    visibility: visible;
+                }
+            }
+        }
     }
 }
 
@@ -1125,7 +1273,6 @@ input[type="radio"] {
     background-color: $splash-bg-color;
     padding: 14px 18px 18px 18px;
     display: flex;
-
 
     .cart-container {
         background-color: white;

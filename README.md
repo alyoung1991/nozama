@@ -77,7 +77,7 @@ addProductToCart(product){
     for(let i = 0; i < quantity; i++){
         this.props.createCartItem(cartItem);
     }
-    this.props.fetchCart(1, this.props.sessionId);
+    this.props.fetchCart(this.props.sessionId);
     this.props.history.push({
         pathname: '/cart/'
     });

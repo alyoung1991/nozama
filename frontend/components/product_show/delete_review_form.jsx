@@ -4,9 +4,16 @@ import { FaStar } from 'react-icons/fa';
 class DeleteReviewForm extends React.Component {
     constructor(props){
         super(props);
+        this.state = this.props.review;
+
         this.navigateToProductShow = this.navigateToProductShow.bind(this);
         this.deleteReview = this.deleteReview.bind(this);
         document.body.scrollTop = document.documentElement.scrollTop = 0
+    }
+
+    componentDidMount() {
+        this.props.fetchReview(this.props.match.params.reviewId);
+        this.props.fetchProduct(this.props.match.params.productId);
     }
 
     navigateToProductShow() {
@@ -22,6 +29,9 @@ class DeleteReviewForm extends React.Component {
 
     render(){
         const { review } = this.props;
+        if(!review){
+            return null;
+        }
         return (
             <div className="delete-review-form-container">
                 <div className="delete-review-form">
@@ -51,7 +61,6 @@ class DeleteReviewForm extends React.Component {
                         </div>
                         <div className="delete-review-form-review-body">{review.body}</div>
                     </div>
-                    
                 </div>
             </div>
         );

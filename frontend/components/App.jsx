@@ -2,7 +2,7 @@ import React from "react";
 import NavBarContainer from "./navigation/nav_bar_container";
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
-import Splash from './splash/splash';
+import SplashContainer from './splash/splash_container';
 import ProductIndexContainer from "./product_index/product_index_container";
 import ProductShowContainer from './product_show/product_show_container';
 import CreateReviewFormContainer from "./product_show/create_review_form_container";
@@ -29,7 +29,7 @@ const App = () => {
                 <ProtectedRoute path="/products/:productId/review/:reviewId/edit" component={EditReviewFormContainer} />
                 <Route path="/products/:productId" component={ProductShowContainer} />
                 <Route path="/cart" component={CartContainer} ></Route>
-                <Route exact path="/" component={Splash} />
+                <Route exact path="/" component={SplashContainer} />
                 {/* redirect back to / OR 404 */}
             </Switch>
             <footer>

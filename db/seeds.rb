@@ -24,77 +24,6 @@ Product.create!(
 )
 
 Product.create!(
-    name: 'Multipet Lambchop Plush Dog Toy 10" with Squeaker',
-    description: "Shari Lewis' classic and beloved lamb is adored by dogs
-//Extra soft plush exterior is great for cuddling
-//Includes squeaker for playtime fun
-//10' regular size dog toy
-//Pet should be supervised while playing",
-    price: 14.75,
-    department: 'Pet Supplies',
-    picture_url: 'https://m.media-amazon.com/images/I/81O7mf19NeL._AC_SL1500_.jpg'
-)
-
-Product.create!(
-    name: 'Nishiki Medium Grain Rice, 80 Ounce',
-    description: '5 lb. bag
-//When flavor and texture of the rice is crucial in cooking, Nishiki is the brand people look to.
-//This along with consistent quality has made Nishiki the most popular rice brand today. Sushi experts agree that Nishiki is their number one choice.
-//If you have leftover rice, put it away by saran wrapping it and refrigerating until it is time to eat again. When reheating, adding some water to the rice will fluff it up',
-    price: 6.73,
-    department: 'Grocery & Gourmet Food',
-    picture_url: 'https://m.media-amazon.com/images/I/91L+CDt9giL._SL1500_.jpg'
-)
-
-Product.create!(
-    name: 'Mkono Plant Stand Mid-Century Modern Plant Stand Indoor (Plant and Pot NOT Included) Flower Pot Holder Home Decor, Brown',
-    description: '【Modern Minimalist Style Design】Elegant house floor planter stand reflects minimalist which inspired by classic mid-century style. Well fits to most home decor and furniture, can be paired with a variety of plants and flowers on vases, mid-century design adds a touch of class to any room, balcony, window, patio or garden. NOTE: The Pot is not included in this item!
-//【Handcraft】 Made from natural handcrafted beech wood. Heavy duty, sturdy, and durable. Handcrafted and made using dowel construction methods guarantee its strength. We always pursuit accurate same size of each leg, but it may have a little bit deviation between legs for it is handmade plant stand. No worries, we offer four floor pads, and they are well work for balance the legs for more stable, they also help to prevent any scratches and anti slip.
-//【Easy to Assemble】Wooden plant stand comes flat in two pieces and just needs to put the two legs together. Simply stand it up and insert the cross bar in the notch. It is also easy to move it to a different spot or different place.
-//【An Attractive Piece for Your Home】Having an indoor plant stand, therefore, is a necessity and provides a way to present your plants in a visually interesting way. My plant stands are elevated to keep plants off the floor and provide them with better air quality and circulation so they look better.
-//【Suitable Size】Height is7.48", Interior diameter is 9.65". Flat plant stand,there are not too many restrictions on the flower pots used.Best fit 10" straight cylindrical flower pot.',
-    price: 22.98,
-    department: 'Garden & Outdoor',
-    picture_url: 'https://m.media-amazon.com/images/I/61M1bd7bltL._AC_SL1500_.jpg'
-)
-
-Product.create!(
-    name: 'Partanna, Extra Virgin Olive Oil Tin, 16.9 Fl Oz',
-    description: 'A monovarietal oil, only made with 100% Nocellara del Belice olives from the province of Trapani in Sicily.
-//We freshly cold press our olives within hours of picking to obtain our premium extra virgin olive oil.
-//It’s bottled immediately after the harvest in mid-October in a dark bottle to keep it fresh longer
-//The oil has a rich flavor profile, with notes of artichokes, almonds and a peppery finish.
-//The Sicily olive oil has received awards for quality that ranked it as the best olive oil in the world.',
-    price: 13.19,
-    department: 'Grocery & Gourmet Food',
-    picture_url: 'https://m.media-amazon.com/images/I/61Rff1eibcL._SL1000_.jpg'
-)
-
-Product.create!(
-    name: 'TAILI Hanging Vacuum Space Saver Bags for Clothes, Set of 4 (2 Long 53"x27.6", 2 Short 41.3"x27.6"),Vacuum Seal Storage Bag Clear Bags for Suits, Dress or Jackets, Closet Organizer',
-    description: "Package of Vacuum Storage Bags: 2 Long( 53x27.6 in)+ 2 Short( 41.3x27.6 in) + 4 Comfortable Thumb Clip for Sealer
-//Upgraded Valve:The space saver bags works with any vacuum cleaner, hand-press is available.exhaust air 35% faster,saving your time.
-//Visible Sealed Result:When you zip the space saver bags, TAILI color-changeable zippers can help you to identify the bags sealed well or not by eyes.
-//Protect Your Stored Items: These space vacuum storage bags are waterproof, airtight and will protect your clothes for a long time
-//100% SATISFACTION. If any of the TAILI product did not meet your requirement, simply contact us and we'll help to solve it in 24 hours. You take NO RISK by ordering today!",
-    price: 25.49,
-    department: 'Home & Kitchen',
-    picture_url: 'https://m.media-amazon.com/images/I/71bOqJNvYjL._AC_SL1500_.jpg'
-)
-
-Product.create!(
-    name: 'Espoma AP8 8-Quart Organic Potting Mix',
-    description: 'Potting soil
-//For all indoor and outdoor containers
-//Enhanced with myco-tone water saving formula
-//Improve moisture retention and reduce drought stress
-//Power source type: Manual',
-    price: 15.79,
-    department: 'Garden & Outdoor',
-    picture_url: 'https://m.media-amazon.com/images/I/818eZyswMmL._AC_SL1500_.jpg'
-)
-
-Product.create!(
     name: 'Amazon Basics USB 2.0 A-Male to Micro B Cable, 6 feet, Black',
     description: 'HIGH-SPEED TRANSMISSION: USB 2.0 cable with A Male to Micro B connectors; supports up to 480 Mbps data transmission speed
 //COMPATIBILITY: Ideal for charging Android phones and tablets or connecting PC peripherals such as hard drives, printers, and more
@@ -132,27 +61,7 @@ Product.create!(
     picture_url: 'https://m.media-amazon.com/images/I/71Og586RJCL._AC_SL1500_.jpg'
 )
 
-Product.create!(
-    name: 'Banana',
-    description: 'You can name it anything
-    // You can name it Banana
-    // Potato',
-    price: 1.99,
-    department: 'Grocery & Gourmet Food',
-    picture_url: 'https://m.media-amazon.com/images/I/21DejQuoT2L.jpg'
-)
-
-Product.create!(
-    name: 'Potato',
-    description: 'You can name it anything
-    // You can call it Potato
-    // Banana',
-    price: 1.95,
-    department: 'Grocery & Gourmet Food',
-    picture_url: 'https://m.media-amazon.com/images/I/616XH4EmfML._SX679_.jpg'
-)
-
-# # Appliances:
+# Appliances:
 Product.create!(
     name: 'FRIGIDAIRE EFIC101-BLACK Portable Compact Maker, 26 lb per Day, Ice Making Machine, Black',
     description: 'Convenient, compact design is ideal for use in small kitchens & other compact spaces like RVs, boats & more
@@ -1245,6 +1154,932 @@ Product.create!(
     picture_url: 'https://m.media-amazon.com/images/I/713xuNx00oS._AC_SL1500_.jpg'
 )
 
+# Garden & Outdoor:
+Product.create!(
+    name: 'Mkono Plant Stand Mid-Century Modern Plant Stand Indoor (Plant and Pot NOT Included) Flower Pot Holder Home Decor, Brown',
+    description: '【Modern Minimalist Style Design】Elegant house floor planter stand reflects minimalist which inspired by classic mid-century style. Well fits to most home decor and furniture, can be paired with a variety of plants and flowers on vases, mid-century design adds a touch of class to any room, balcony, window, patio or garden. NOTE: The Pot is not included in this item!
+//【Handcraft】 Made from natural handcrafted beech wood. Heavy duty, sturdy, and durable. Handcrafted and made using dowel construction methods guarantee its strength. We always pursuit accurate same size of each leg, but it may have a little bit deviation between legs for it is handmade plant stand. No worries, we offer four floor pads, and they are well work for balance the legs for more stable, they also help to prevent any scratches and anti slip.
+//【Easy to Assemble】Wooden plant stand comes flat in two pieces and just needs to put the two legs together. Simply stand it up and insert the cross bar in the notch. It is also easy to move it to a different spot or different place.
+//【An Attractive Piece for Your Home】Having an indoor plant stand, therefore, is a necessity and provides a way to present your plants in a visually interesting way. My plant stands are elevated to keep plants off the floor and provide them with better air quality and circulation so they look better.
+//【Suitable Size】Height is7.48", Interior diameter is 9.65". Flat plant stand,there are not too many restrictions on the flower pots used.Best fit 10" straight cylindrical flower pot.',
+    price: 22.98,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/61M1bd7bltL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Espoma AP8 8-Quart Organic Potting Mix',
+    description: 'Potting soil
+//For all indoor and outdoor containers
+//Enhanced with myco-tone water saving formula
+//Improve moisture retention and reduce drought stress
+//Power source type: Manual',
+    price: 15.79,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/818eZyswMmL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'AeroGarden Harvest - Indoor Garden with LED Grow Light, Black',
+    description: 'INCLUDES GOURMET HERB SEED KIT (6-POD) - Genovese Basil, Curly Parsley, Dill, Thyme, Thai Basil and Mint & a 3oz bottle of our patented, all natural Plant Nutrients (enough for a full season of growth).
+//ALWAYS HOMEGROWN: FRESH & SAFE - Up to 6 plants grow at a time, up to 12“ tall with this indoor garden. Grows in water - no soil, no mess, made simple.
+//EASY TO USE (GROW) - control panel tells you when to add water, reminds you when to add plant food (included), automatically turns lights on and off for your indoor herb garden
+//5X FASTER THAN SOIL - High-performance, full spectrum 20-watt LED high efficiency grow lighting system in your herb garden is tuned to the specific needs of plants to maximize photosynthesis, resulting in rapid, natural growth and abundant harvests.
+//PERFECT GIFT FOR ANYONE - Give the gift of growing fresh herbs & veggies all year round in this indoor herb garden. The AeroGarden Harvest is the perfect gift idea for men, women, dad, mom, grandma, any friend or family member. Always fresh, always local, always in season.',
+    price: 89.99,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/81DPs6WZXjL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Flexzilla HFZG510YW Garden Lead-In Hose 5/8 In. x 10 ft, 10 (feet)',
+    description: 'EXTREMELY FLEXIBLE – Extreme all-weather flexibility makes it easy to maneuver around trees, bushes or other obstacles
+//EXTRMELY DURABLE – Durable and abrasion-resistant outer cover and crush resistant anodized aircraft aluminum fittings
+//WON’T KINK UNDER PRESSURE – Flexible hybrid polymer material allows the hose to lay flat with no memory
+//LIGHTWEIGHT – Lighter than traditional garden hoses making Flexzilla easier to carry, life and maneuver around the yard
+//EASY TO COIL – Won’t fight you when coiling and zero memory means the sprinkler stays put without twisting
+//LEAK FREE – Superior O-ring for long-term, leak-free connections
+//DRINKING WATER SAFE – Lead free',
+    price: 19.98,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/51LK8sWfjtL._AC_SL1200_.jpg'
+)
+Product.create!(
+    name: 'AeroGarden Heirloom Salad Greens Seed Pod Kit (3-pod)',
+    description: 'INCLUDES SALAD GREENS SEED KIT - 3 pre-seeded Grow Pods, featuring gourmet lettuce varieties: Black Seeded Simpson (1), Deer Tongue (1) and Parris Island (1)
+//PLANT TO PLATE – Non-GMO seeds; No herbicides; No pesticides. Harvest lettuce directly from your AeroGarden for the freshest salad possible.
+//COMES WITH EVERYTHING - Also includes a 3 oz bottle of patented, specially formulated Liquid Nutrients, grow domes for optimal germination, and a Growing Guide with step by step instructions.
+//GERMINATION GUARANTEE - 100 Percent Germination Guarantee; if a Seed Pod doesnt sprout, well replace it for free.
+//WORKS WITH ANY AEROGARDEN - For use in all AeroGarden models.',
+    price: 9.89,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/81MxuioeUaL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Catchmaster 72MAX Pest Trap, 36Count, White',
+    description: 'Glue, Peanutbutter scent
+//Mouse glue boards come with Catchmaster signature high quality
+//Boards can lay flat',
+    price: 13.80,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/41zBgRNEIoL._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Miracle-Gro Indoor Plant Food Spikes, Includes 24 Spikes - Continuous Feeding for all Flowering and Foliage Houseplants - NPK 6-12-6',
+    description: 'Easy-to-use fertilizer for all indoor plants including ferns, spider plants, pothos, and croton
+//Houseplant fertilizer spikes feed continuously for up to 2 months
+//When used as directed, plant food spikes are safe to use on all indoor, potted plants
+//Plant food spikes are filled with the micronutrients that indoor plants need
+//Indoor plant care made simple; enjoy vibrant potted plants in your home, office or business',
+    price: 2.98,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/71N5-jP8GEL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Katchy Indoor Insect Trap - Catcher & Killer for Mosquito, Gnat, Moth, Fruit Flies - Non-Zapper Traps for Buzz-Free Home - Catch Flying Insect Indoors with Suction, Bug Light & Sticky Glue (Black)',
+    description: 'Triple trapping power, first the UV light attracts the bug then the fan sucks it in and the sticky glue boards trap it. No Zapper
+//Subtle and stylish fruit fly, gnat and mosquito killer, no more ugly traps, easily place in your home, kitchen or office as a decorative, stylish piece.
+//Trap indoors, close to insect-ridden fruit, plants or trash bin, turn off lights for best results.
+//Reduces bugs, but isnt a complete insect killer solution, not a substitute for pest control services. Not for house flies.
+//Easy to use, choose between standard or low speed setting and leave it to work its magic, EPA Est. Numb.:93372-CHN-1',
+    price: 39.79,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/81b4V4cDl7L._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'TERRO T300 Liquid Ant Baits, 6 Bait Stations',
+    description: 'Kills the ants you see and the ones you don’t
+//Ready to use – Set the bait, attract ants, and kill the colony
+//Stay-fresh tab keeps liquid bait fresh until opened
+//Snap-off design makes it easy to open – No scissors needed
+//Use bait stations along baseboard, under appliances, on windowsills and wherever ants are numerous',
+    price: 4.68,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/91Sl+I74ypL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'WHAT ON EARTH Outdoor Hand Painted Squirrel Tree Climber Sculpture - Fun Garden Statue',
+    description: 'Add some squirrelly charm to your lawn or garden
+//Realistically sized to make neighbors and passersby look twice - measures 12" high
+//Made from weather-resistant resin that wont crack or fade
+//Hangs in minutes on the included hardware and under-belly keyhole
+//Perfect gift for any nature and squirrel lover with a sense of humor',
+    price: 31.99,
+    department: 'Garden & Outdoor',
+    picture_url: 'https://m.media-amazon.com/images/I/7107jx0W-XL._AC_SL1500_.jpg'
+)
+
+# Grocery
+Product.create!(
+    name: 'Nishiki Medium Grain Rice, 80 Ounce',
+    description: '5 lb. bag
+//When flavor and texture of the rice is crucial in cooking, Nishiki is the brand people look to.
+//This along with consistent quality has made Nishiki the most popular rice brand today. Sushi experts agree that Nishiki is their number one choice.
+//If you have leftover rice, put it away by saran wrapping it and refrigerating until it is time to eat again. When reheating, adding some water to the rice will fluff it up',
+    price: 6.73,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/91L+CDt9giL._SL1500_.jpg'
+)
+
+Product.create!(
+    name: 'Partanna, Extra Virgin Olive Oil Tin, 16.9 Fl Oz',
+    description: 'A monovarietal oil, only made with 100% Nocellara del Belice olives from the province of Trapani in Sicily.
+//We freshly cold press our olives within hours of picking to obtain our premium extra virgin olive oil.
+//It’s bottled immediately after the harvest in mid-October in a dark bottle to keep it fresh longer
+//The oil has a rich flavor profile, with notes of artichokes, almonds and a peppery finish.
+//The Sicily olive oil has received awards for quality that ranked it as the best olive oil in the world.',
+    price: 13.19,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/61Rff1eibcL._SL1000_.jpg'
+)
+Product.create!(
+    name: 'Banana',
+    description: 'You can name it anything
+    // You can name it Banana
+    // Potato',
+    price: 1.99,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/21DejQuoT2L.jpg'
+)
+
+Product.create!(
+    name: 'Potato',
+    description: 'You can name it anything
+    // You can call it Potato
+    // Banana',
+    price: 1.95,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/616XH4EmfML._SX679_.jpg'
+)
+Product.create!(
+    name: 'CELSIUS Fitness Energy Drink 12 Fl Oz, Peach Mango Green Tea (Pack of 4)',
+    description: 'Gluten free
+//Dairy Free
+//Yeast Free',
+    price: 18.99,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/81vFprjU9lL._SL1500_.jpg'
+)
+Product.create!(
+    name: 'Sparkling Ice, Black Cherry Sparkling Water, Zero Sugar Flavored Water, with Vitamins and Antioxidants, Low Calorie Beverage, 17 fl oz Bottles (Pack of 12)',
+    description: 'ZERO SUGAR: Sparkling Ice Black Cherry is a fruity, flavorful sparkling water made with zero sugar; Each bottled water contains only 5 calories for guilt-free refreshment
+//BETTER-FOR-YOU INGREDIENTS: Made with colors from natural sources, Sparkling Ice is made with better-for-you ingredients and bursting with real fruit flavor
+//VITAMINS & ANTIOXIDANTS: Sparkling Ice’s variety of fizzy, fruity flavors contain vitamins and antioxidants, including Vitamin A and Vitamin D to promote a balanced lifestyle
+//LOW CALORIE BEVERAGE: With only 5 calories per serving, Sparkling Ice is a flavorful, low calorie beverage option with zero carbs so you can sip back and enjoy
+//14 BOTTLES: Each Sparkling Ice multi-pack offering includes 12 bottles of flavored sparkling water; Each bottle contains 1 serving equivalent to 17 fluid ounces; Please recycle',
+    price: 12.00,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/61me336VNyL._SL1081_.jpg'
+)
+Product.create!(
+    name: 'Nespresso Capsules VertuoLine, Medium and Dark Roast Coffee, Variety Pack, Stormio, Odacio, Melozio, 10 Count (Pack of 3)',
+    description: 'NESPRESSO VERTUOLINE VARIETY PACK ASSORTMENT: This Nespresso coffee assortment offers 30 Nespresso Pods in a variety of 3 best-selling coffee blends for the Nespresso VertuoLine System.10 Stormio, 10 Odacio, 10 Melozio
+//INTENSITY: This assortment will let you explore the rich tastes of the following Nespresso Capsules: Stormio (Intensity 8), Odacio (Intensity 7) & Melozio (Intensity 6). Its the perfect choice to discover a distinctive range of extraordinary coffees
+//COFFEE BREWS 7.8 OZ : These Nespresso VertuoLine pods provide you with a 7.8 oz serving of coffee which is perfect for a longer drinking experience
+//WE RECYCLE: Nespresso aluminum capsules are fully recyclable and guarantee coffee freshness - we provide different options for recycling your used aluminum coffee pods to fulfill our collective commitment to protecting the environment
+//VERTUOLINE ONLY: Nespresso Vertuo delivers you a full range of cup sizes and coffee styles from espresso to Alto XL with easy to use Nespresso pods. Enjoy hot or pour over ice. (VertuoLine Capsules are not compatible with Original Line machines )',
+    price: 33.00,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/71y-kp+nXrL._SL1500_.jpg'
+)
+Product.create!(
+    name: 'The Original Donut Shop Decaf Keurig Single-Serve K-Cup Pods, Medium Roast Coffee, 72 Count',
+    description: 'BRAND STORY: Get ready to dive headfirst into a cup of delicious coffee. With our full-bodied taste, you can reimagine the limits of coffee and turn every day into a treat - no matter how sweet and creamy you make it. So drink up, and set your taste buds to discovery mode!
+//TASTE: Fresh, bold, and flavorful, our Decaf coffee packs in all the happines.Does Not Contain Any of the 8 Major Allergens
+//ROAST: Medium Roast decaf coffee and is certified Orthodox Union Koshe
+//SUSTAINABILITY: Committed to 100 percent responsibly sourced coffee
+//COMPATIBILITY: Contains genuine Keurig K-Cup pods, engineered for guaranteed quality and compatibility with all Keurig K-Cup pod coffee makers
+//RECYCLABLE K-CUP PODS: Simple. Delicious. And Recyclable. Enjoy the same great-tasting coffee you know and love, and when you’re done just peel, empty and recycle. Check locally, not recycled in all communities. Packaging may vary.',
+    price: 36.74,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/81vsgUv4KJL._SL1500_.jpg'
+)
+Product.create!(
+    name: 'Frito-Lay Variety Pack, Party Mix, 40 Count',
+    description: '40 Single Serve favorites Lays Classic Potato Chips, Crunchy Cheetos, Chili Cheese Fritos, Lays BBQ Potato Chips, Original Funyuns, Doritos Nacho Cheese, Original Fritos, and Ruffles Cheddar & Sour Cream Chips
+//With eight different varieties, theres sure to be something everyone will love
+//These much loved treats are fun to enjoy at lunch, as an after school snack, or party refreshment
+//Our snacks have a short shelf life (60 to 90 days) so most of our packages only show the month & day of expiration (e.g. “Aug. 16” means august 16th, not august 2016); for optimum flavor and freshness, we recommend the snack be consumed by the date on the package',
+    price: 17.98,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/81DF9tHWcbL._SL1500_.jpg'
+)
+Product.create!(
+    name: 'Nespresso Capsules VertuoLine, Barista Flavored Pack, Mild Roast Coffee, 30 Count Coffee Pods, Brews 7.8 Ounce',
+    description: 'New indulgent flavored Nespresso coffee blends inspired by our classic favorites :This assortment of Nespresso Original Line espresso coffee pods contains a variety of Nespresso capsules: 10 Caramel Cookie, 10 Vanilla Custard Pie, 10 Hazelino Muffin
+//INTENSITY 6: Split roast, the Brazilian beans are roasted medium dark and quickly to develop sweetness, the second split gives this coffee its v texture in all the Nespresso pods and we add in the caramel, vanilla and hazelnut flavor after roasting
+//VERTUOLINE BARISTA FLAVOR PACK COFFEE BREWS 7.8 OZ: These Nespresso VertuoLine pods provide you with a 7.8 OZ serving of coffee which is perfect for a longer drinking experience
+//WE RECYCLE: Nespresso aluminum capsules are fully recyclable and guarantee coffee freshness - we provide different options for recycling your used aluminum coffee pods to fulfill our collective commitment to protecting the environment
+//VERTUOLINE ONLY: Nespresso Vertuo delivers you a full range of cup sizes and coffee styles from espresso to Alto XL with easy to use Nespresso capsules. Enjoy hot or pour over ice. (VertuoLine Pods are not compatible with Original Line machines )',
+    price: 33.00,
+    department: 'Grocery & Gourmet Food',
+    picture_url: 'https://m.media-amazon.com/images/I/71Z0uWZYRNL._SL1500_.jpg'
+)
+
+# Home & Kitchen
+Product.create!(
+    name: 'TAILI Hanging Vacuum Space Saver Bags for Clothes, Set of 4 (2 Long 53"x27.6", 2 Short 41.3"x27.6"),Vacuum Seal Storage Bag Clear Bags for Suits, Dress or Jackets, Closet Organizer',
+    description: "Package of Vacuum Storage Bags: 2 Long( 53x27.6 in)+ 2 Short( 41.3x27.6 in) + 4 Comfortable Thumb Clip for Sealer
+//Upgraded Valve:The space saver bags works with any vacuum cleaner, hand-press is available.exhaust air 35% faster,saving your time.
+//Visible Sealed Result:When you zip the space saver bags, TAILI color-changeable zippers can help you to identify the bags sealed well or not by eyes.
+//Protect Your Stored Items: These space vacuum storage bags are waterproof, airtight and will protect your clothes for a long time
+//100% SATISFACTION. If any of the TAILI product did not meet your requirement, simply contact us and we'll help to solve it in 24 hours. You take NO RISK by ordering today!",
+    price: 25.49,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/71bOqJNvYjL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Amazon Basics Lightweight Super Soft Easy Care Microfiber Bed Sheet Set with 14” Deep Pockets - Twin, Aqua Fern',
+    description: '100% Polyester Microfiber
+//Imported
+//Twin bed sheet set includes (1) 66 x 96 inch flat sheet, (1) 38 x 74 x 14 inch fitted sheet, and (1) 20 x 30 inch Standard pillowcase
+//All-around elastic on 14 inch fitted sheet allows for snug, secure fit of most mattress sizes up to a 16 inch mattress depth
+//Super soft and durable polyester microfiber (85 GSM) fabric offers all-season comfort and resists wrinkles and fading
+//Easy care bedding; machine wash warm with no bleach and tumble dry low
+//Made in an OEKO-TEX Standard 100 factory, an independent certification system that ensures textiles meet high safety and environmental standards',
+    price: 14.99,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/714n7w3dfDL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'YANKEE CANDLE Red Apple Wreath Small Jar Candle',
+    description: 'Authentic, true-to-life fragrance
+//Official Yankee Candle product.
+//Fragrance lasting for 25-40 hours',
+    price: 24.26,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/816BpTKH01L._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Instant Pot Duo Plus 9-in-1 Electric Pressure Cooker, Slow Cooker, Rice Cooker, Steamer, Sauté, Yogurt Maker, Warmer & Sterilizer,3 Quart Stainless Steel/Black',
+    description: '9-IN-1 FUNCTIONALITY: Pressure cook, slow cook, rice cooker, yogurt maker, steamer, sauté pan, yogurt maker, sterilizer and food warmer.
+//IMPROVED STRESS-FREE VENTING: Intuitive and simple, our improved easy-release steam switch makes releasing steam easier than ever, and it automatically resets when the lid is closed.
+//REALTIME FEEDBACK: The easy-to-read display includes a full cooking progress bar lets you know what stage of the cooking program you’ve reached.
+//QUICK ONE-TOUCH COOKING: 13 customizable Smart Programs for pressure cooking ribs, soups, beans, rice, poultry, yogurt, desserts and more
+//VERSATILE INNER COOKING POT: Food-grade stainless-steel cooking pot with a tri-ply bottom offers more even cooking and an anti-spin design that secures the pot for perfect sautéing.
+//COOK FAST OR SLOW: Pressure cook delicious one-pot meals up to 70% faster than traditional cooking methods or slow cook your favorite traditional recipes – just like grandma used to make.
+//QUICK, EASY CLEAN UP: Finger-print resistant, stainless-steel sides and dishwasher-safe lid, inner pot, and accessories
+//PROVEN SAFETY FEATURES: Includes over 10 safety features, plus overheat protection and safe-locking lid.
+//PERFECT SIZE: Cook for up to 3 people – perfect for smaller families, or meal prepping and batch cooking for singles. Power supply- 120V - 60Hz 
+//DISCOVER AMAZING RECIPES: Download our free Instant Pot app (iOS and Android) so you can discover new favorites and prepare delicious meals.',
+    price: 99.99,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/71CzD+eRG3L._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'YETI Rambler 20 oz Tumbler, Stainless Steel, Vacuum Insulated with MagSlider Lid, Stainless',
+    description: 'These Ramblers come standard with our YETI MagSlider Lid, the only drink lid that uses the power of magnets to keep your water, beer, or favorite drink on lock
+//Our Ramblers are BPA-free, dishwasher safe, and have a No Sweat Design to make sure your hands stay dry
+//Dracut is a durable coat of color that wont fade, peel, or crack through extended field use and also provide additional grip to the Ramblers exterior
+//We over-engineered these double-wall insulated tumblers with an 18/8 stainless steel body, which means your drink still keeps its temperature no matter how much of a beating this cup takes
+//The YETI 20 oz. Rambler Tumbler stands 6 7/8 in high and has a lip diameter of 3 1/2 in. All YETI Tumblers are sized to fit in standard sized cup holders',
+    price: 29.98,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/61MeC-WscQL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Bedsure Satin Pillowcases Standard Set of 2 - Airy Blue Pillow Cases for Hair and Skin 20x26 inches, Satin Pillow Covers 2 Pack with Envelope Closure',
+    description: 'Elevate Your Beauty Sleep: This 100% polyester satin pillowcases protect delicate facial hair from scratches, creases and tugs, helping to reduce split ends and ensuring a night of restorative beauty sleep.
+//Leave Skin Hydrated: Experience the next generation of revolutionary fabric, highly advanced satin fabric. While other materials may tug at your hair follicles and strip your skin of natural, important oils, satin isnt as drying as cotton. Satin is like a godsend for your skin. your skin of natural, important oils, satin isnt as drying as cotton. Satin is like a godsend for your skin.
+//Exclusive User Feeling: Envelope closure end design prevents your pillows from escaping during your sweet dream. No zipper, this pillowcase has an easy on and off design to bring you a unique and pleasant experience.
+//Fresh and Modern Expression: Bedsure’s crisp, even-textured satin pillowcases are both soft and durable, coaxing out a good nights sleep.
+//Easy Care: High-quality satin is sturdier and more durable than silk pillowcases, which need professional care. Turn Bedsures satin pillowcase inside out, place it inside a mesh laundry bag and wash with a mild detergent.',
+    price: 13.99,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/71d0CM-AKdL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Ariceleo Led Fairy Lights Battery Operated, 1 Pack Mini Battery Powered Copper Wire Starry Fairy Lights for Bedroom, Christmas, Parties, Wedding, Centerpiece, Decoration (5m/16ft Blue)',
+    description: '*SUPER BRIGHT 50 LED STRING LIGHTS: These Best 50 LEDs Micro LED Battery Operated String Lights Lamp are perfect for using as a lighting addition to any decorative project. delicate copper wire hosts 50 very small LED bulbs that are about size of the rise grain and are intensely bright. With steady 360 degree viewing angle they illuminate in every direction.
+//*INDOOR STARRY LIGHTS: 50 Super Bright Yellow Color LEDs Lights on 16 Ft Long Copper Ultra-Thin Wire with 4 Inches Distance Between LED Bulbs and 12 Inches Clear Cable Between Wire and Battery Box.
+//*EASY TO SHAPE AND MOLD: Newest Clear and Small Battery Box That is Easy to Hide Requires 3 AA Batteries (Not Included).
+//*ENERGY EFFICIENT, NO HEAT PROBLEMS: The ultra slim thin copper wire, Bendable but Sturdy Wire with LED Lights is waterproof.
+//*CAREFREE AFTER-SALES SERVICE：Please be confident to buy Ariceleo fairy lights. Dont like it once received? Just return it by Amazon. We have a professional customer service team, If you have any questions during the use, please feel free to contact us.',
+    price: 6.99,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/71v25WOnXZL._AC_SL1200_.jpg'
+)
+Product.create!(
+    name: 'Mellanni Extra Deep Pocket Twin XL Sheet Set - Luxury 1800 Bedding Sheets & Pillowcases - Fits College Dorm Room Mattress - Ultra Soft Cooling Bed Sheet Set - Easy Care - 3 PC (Twin XL, Baby Blue)',
+    description: 'Perfect Deep Mattress Fit - Mellanni specifically designed these sheets for extra DEEP mattresses and they are a perfect fit for 17 inch, 18 inch, 19 inch, 20 inch and even 21 inch mattresses. They are perfect for extra tall and thick mattresses, double pillow top mattresses, memory foam toppers, big mattress pads, air mattresses, waterbed mattresses and even adjustable beds! For mattresses 16" and under try Mellanni classic collection sheet sets
+//Extra Deep Pocket Twin XL Sheet Set comes with Mellanni Signature Z-fold technology elastic edging all around and insures your Extra Deep fitted sheet will stay in place, will not shift and elastic will never snap. 3 PIECE Sheet Set - Twin XL size sheets include 1 flat sheet 102"x66", 1 fitted sheet 80"x39"x21", 1 pillowcase 20"x30". Pillowcases have straight opening and beautiful decorative embroidery. Great for any room in your house - bedroom, guest room, kids room, RV, vacation home, or bnb
+//Highest Quality Brushed Mircofiber - Mellannis Signature highest quality double brushed 1800 collection microfiber complemented by superior workmanship make our bed sheet sets Last! They are extra silky soft, more comfortable and more durable than cotton. Fabulous selection of colors will make your bedroom look like it belongs in a magazine. Great gift idea for house warming gift, men and women, Moms and Dads, Valentines - Mothers - Fathers Day and Christmas
+//Easy Care - Fade, stain, shrink, pill and wrinkle resistant. Pet friendly. Machine wash in cold. Dries quick on tumble dry low
+//Mellanni Lifetime Promise - Mellanni is a different kind of company that prides itself on providing the absolute best customer service in the industry. If you are not satisfied with your purchase at any point and for any reason, you can return it with no questions asked. Thats the Mellanni Promise (in fact, you dont even have to send back the product)',
+    price: 44.97,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/614TGM-cPYL._AC_SL1050_.jpg'
+)
+Product.create!(
+    name: 'Zulay Original Milk Frother Handheld Foam Maker for Lattes - Whisk Drink Mixer for Coffee, Mini Foamer for Cappuccino, Frappe, Matcha, Hot Chocolate by Milk Boss (Black)',
+    description: 'Make Rich, Creamy Froth In Seconds: We coffee lovers are serious when it comes to our coffee. The Milk Boss Frother gives that professional finishing touch to your latte, cappuccino, macchiato or hot chocolate. Make delicious foamy creamer for your drinks at home without a trip to Starbucks with your own milk frother. The benefits of having your own electric drink whisk mixer are endless, you can make your own best latte, you know your tastes best.
+//Matcha Whisking, Coffee & More: Works better than a manual matcha whisk for making matcha tea and works far better than fork or whisk for coffee. It works very well to mix nutritious protein powder drinks with no extra container, blender or bottle shaker to wash. Use our mini mixer for your whisking and mixing needs: Give healthy shakes and smoothies a kick by adding powder or egg nog flavor and mixing.
+//Proven and Trusted Quality: We use only premium materials. The construction will last, backed by our Zulay Guarantee to not rust or break, ever. Our small and efficient frother works on all types of milk - half and half, creamer, soy, almond, cashew, hazelnut, whole milk, and other dairy such as butter or cream.
+//Easy To Clean and Store: The durable convenient metal stand gives easy access for foamy goodness in seconds. Cleanup for this matcha wisk & frother is even faster. To clean just put the whisk in hot running water and briefly turn it on – instantly clean! When stored on counter or table it sits nicely next other coffee accessories. Our powerful and durable hand-held milk frother is powered by two AA batteries (not included) with a compact electric design that easily fits in a drawer.
+//No Hassle, Zulay Guarantee: We love and take pride in our milk frother and we back this up with a lifetime guarantee. Have the confidence that this frother will last, if there are ever any issues, just contact us and we will make it right. Order now and be assured that this product will live up to your expectations, guaranteed.',
+    price: 16.99,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/81pQk3mHOfL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'iRobot Roomba 675 Robot Vacuum-Wi-Fi Connectivity, Works with Alexa, Good for Pet Hair, Carpets, Hard Floors, Self-Charging',
+    description: 'Capacity volume - .6 liter. Works with Alexa for voice control (Alexa device sold separately)
+//Clean and schedule from anywhere with the iRobot HOME App; compatible with Amazon Alexa and the Google Assistant
+//Patented 3-Stage Cleaning System and Dual Multi-Surface Brushes pick up everything from small particles to large debris
+//Full suite of intelligent sensors guide the robot under and around furniture to help thoroughly clean your floors
+//Auto-Adjust Cleaning Head automatically adapts its height to effectively clean carpets and hard floors',
+    price: 274.99,
+    department: 'Home & Kitchen',
+    picture_url: 'https://m.media-amazon.com/images/I/816uZdNKYhL._AC_SL1500_.jpg'
+)
+
+# Office Products
+Product.create!(
+    name: 'TICONDEROGA Pencils, Wood-Cased, Unsharpened, Graphite #2 HB Soft, Yellow, 96-Pack',
+    description: 'Exclusive #2 graphite formula provides extra smooth performance
+//Top quality, latex-free eraser provides easy, clean corrections
+//Made with premium wood from responsibly managed forests
+//Satin smooth finish enhances writing comfort, PMA certified non-toxic
+//Includes 96 pencils comprised of 8 boxes of 12 pencils each',
+    price: 4.49,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/812XyYkJdvS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Amazon Basics Multipurpose Copy Printer Paper - White, 8.5 x 11 Inches, 1 Ream (500 Sheets)',
+    description: '1 ream of 8.5 x -11 inch multipurpose copy paper (500 sheets total)
+//Works with laser/inkjet printers, copiers and fax machines
+//High-quality 20-pound weight for economical printing and resistance to paper jams
+//Bright white for better contrast; 92 GE brightness (104 Euro)
+//Acid-free paper',
+    price: 8.54,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/71mwf6-21xL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Scotch Heavy Duty Packaging Tape, 1.88" x 22.2 yd, Designed for Packing, Shipping and Mailing, Strong Seal on All Box Types, 1.5" Core, Clear, 6 Rolls with Dispenser',
+    description: 'Guaranteed to stay sealed (If your box does not stay sealed, 3M will refund the purchase price of this tape). Proof of purchase required.
+//Provides excellent holding power for heavy-duty packaging and shipping
+//Strong seal on all box types, including harder-to-stick-to 100% recycled boxes
+//Strong, durable solvent-free hot melt adhesive seals and protects
+//Release coating makes unwind easy. Resists slivering, splitting and tearing..Includes 6 rolls with 6 dispensers with fallback tabs to ensure tape doesnt fall back on the roll.Scotch brands strongest clear-to-the-core packaging tape.Clear backing and instant adhesion.Meets U.S. postal regulations for standard packages.Made in USA with US and globally sourced materials',
+    price: 12.99,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/81Ogtj4bX4L._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Hammermill Printer Paper, 20 Lb Copy Paper, 11 x 17 - 1 Ream (500 Sheets) - 92 Bright, Made in the USA',
+    description: 'HAMMERMILL’S BEST SELLING PRINTER PAPER: You will receive one ream of paper with 500 sheets of 20lb, 92 bright, 11" x 17" white copy paper. Ledger Size
+//99.99% JAM-FREE PRINTER PAPER: Everyone hates paper jams. You can trust Hammermill paper quality to keep your printer running smoothly. Scroll down to view the product description for details
+//COLORLOK TECHNOLOGY INCLUDED: Colors on Hammermill copy paper are 30% brighter; blacks are up to 60% bolder and inks dry 3 times faster for less smearing. Acid-free Hammermill paper ensures long-lasting archival quality
+//MADE IN USA: Hammermill copying and printing papers are 100% made in the USA, helping to support 2.4 million sustainable forestry jobs in America, including family tree farmers. Hammermill is more than just paper
+//MAKE SURE IT’S ORIGINAL HAMMERMILL QUALITY: Look for “Ships from and sold by ” at the top of the page, under the product title
+//OTHER PAPER OPTIONS: Scroll down to compare Hammermill print and copy paper for every purpose, including premium presentation-quality color copy paper, cover-weight paper stock, and glossy paper for photo printing',
+    price: 19.89,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/815KcbzHbpS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'AT-A-GLANCE 2020 Desk Calendar, Desk Pad, 21-3/4" x 17", Standard, Ruled Blocks',
+    description: 'YEAR-ROUND PLANNING – Desk pad covers 12 months from January 2020-December 2020 with Julian dates. Keep track of important deadlines, special events and more with clear organization.
+//INK BLEED RESISTANCE – Plan your schedule without fear of distracting ink bleeding. Our improved, high-quality paper is designed for superior ink bleed resistance, which keeps plans neat and legible.
+//MONTHLY OVERVIEW – Great for long term planning, each month features ruled daily blocks, space for notes and a full year of reference calendar blocks. Pages measure 21-3/4" x 17".
+//ENHANCED ORGANIZATION – Expand your organizational skills with special features, including a perforated pages, 2 black corner protectors and holes for optional wall hanging.',
+    price: 21.35,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/61+L4v+BI1L._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Scotch Gift Wrap Tape, 6 Rolls, the Go-To Tape for the Holidays, 3/4 x 650 Inches, Dispensered',
+    description: 'Disappears on most gift wrap papers
+//Gives gifts a smooth, finished look
+//The go-to tape for the holidays
+//Refillable dispenser: Easy to hold, easy to cut
+//Strong and secure.Photo safe.Glides off, roll smoothly, cuts easily.Made in the USA with globally sourced materials',
+    price: 13.14,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/81OfNcfJMAL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Amazon Basics 6-Sheet Cross-Cut Paper and Credit Card Home Office Shredder',
+    description: '6 sheet crosscut paper/credit card shredder
+//Auto Start and overheat protection
+//Thermal Protection to prevent overheating
+//manual reverse to clear paper jams
+//shreds credit cards; small paper clips; staples
+//Important Note: Do not spray or keep any aerosol products in or around the shredder and do not shred items like metallic credit cards',
+    price: 33.76,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/81+TKpspbIL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'EZlifego Double Sided Tape Heavy Duty (9.85FT), Multipurpose Removable Mounting Tape Adhesive Grip,Reusable Strong Sticky Wall Tape Strips Transparent Tape Poster Carpet Tape for Paste Items,Household',
+    description: '【MULTIFUNCTIONAL TAPE】- Made from the latest acrylic-gel material, our transparent double-sided adhesive tape is incredibly strong,durable,Easy to Install,No Tools Required,Instant Bonding does not require curing or drying stage.This super adhesive tape works perfectly in temperatures range from 0℉ to 200℉.
+//【REMOVABLE & REUSABLE & TRACELESS】- The removable double-sided tape leaves no residue, easy to remove and will not damage surfaces.Wash it with water and dry it to regain its stickiness when you need to reuse the tape. Please Note: it is not recommended to use it on unstable Paint Walls，our tape is very sticky,avoid causing the wall surfaces to fall off when removing tape.
+//【EASY TO USE】- Size: length 9.85 Feet ,width 3.0cm(1.18in) ,thickness 0.07in.Strong Holding Power: Holds up to 18 pounds on smooth surfaces (1 pound per 4 inches). It can be easily cut to any size or length you require.All you need to do is to stick the tape to the surface of the item.
+//【Versatile Uses Meet all Your Needs】- This double sided tape will stick to almost anything with a smooth surface so you can stick anything anywhere.You can use it to fix or paste items such as pictures,photos,frames,wall stickers,posters,hooks,shelves,phone holders,carpets,flowerpots,power sockets,decorations, DIY items… Good performance in both indoor and outdoor.
+//【Double-Sided Tape Is an Essential for Your Daily Life】- Our tape has undergone strict quality testing. This sticky transparent tape can be used for a variety of purposes,it will bring great convenience to your life!',
+    price: 12.99,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/61V0o79n41L._SL1500_.jpg'
+)
+Product.create!(
+    name: 'Blue Sky 2022 Weekly & Monthly Planner, 5" x 8", Flexible Cover, Wirebound, Enterprise',
+    description: 'January 2022 - December 2022 stylish day planner with 12 months of monthly and weekly pages for easy year-round planning; 6 additional monthly pages (July 2021 - December 2021) are included
+//Monthly view pages contain previous and next month reference calendars for long-term planning, and a notes section for important projects; Major holidays listed, elapsed and remaining days noted
+//Weekly view pages offer ample lined writing space for more detailed planning, allowing you to keep track of your appointments, reminders, ideas and to-do lists every day of the week
+//Yearly calendar planner includes a convenient list of holidays, reference calendars, contacts pages and extra notes pages to accommodate your scheduling needs and keep you organized
+//Printed on high quality white paper for clean writing space, with premium quality covers in a professional design and durable, coated tabs that withstand constant use throughout the year',
+    price: 14.99,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/718d65RcbiS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'EXPO 80074 Low-Odor Dry Erase Markers, Chisel Tip, Assorted Colors, 4-Count',
+    description: 'Expo Low-Odor Dry Erase Markers, Chisel Tip, 4-Pack, Assorted Colors (80074)
+//Bright, vivid, non-toxic ink is quick-drying, smear-proof, easy to see from a distance, and provides consistent color quality.
+//Versatile chisel tip allows for broad or fine writing.
+//Erases cleanly and easily with a dry cloth or Expo eraser.
+//Ink is specially formulated to be low-odor. Perfect for use in classrooms, small offices, and homes.',
+    price: 4.49,
+    department: 'Office Products',
+    picture_url: 'https://m.media-amazon.com/images/I/81RTq2Qj++L._AC_SL1500_.jpg'
+)
+
+# Pet Supplies
+Product.create!(
+    name: 'Multipet Lambchop Plush Dog Toy 10" with Squeaker',
+    description: "Shari Lewis' classic and beloved lamb is adored by dogs
+//Extra soft plush exterior is great for cuddling
+//Includes squeaker for playtime fun
+//10' regular size dog toy
+//Pet should be supervised while playing",
+    price: 14.75,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/81O7mf19NeL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Nina Ottosson by Outward Hound - Interactive Puzzle Game Dog Toys',
+    description: 'BEGINNER DOG PUZZLE: The Dog Smart by Nina Ottosson is a level 1 interactive puppy puzzle toy that will prepare your pup for more challenging games with simple one-step actions. Suitable for any breed and size.
+//ENGAGING & MENTALLY STIMULATING: This interactive dog puzzle features 9 hidden compartments that are covered by 9 removable dog bone pieces. Hide your pups favorite treats in the compartments and elevate the bone for an easier grab or leave them flush with the board for increased difficulty. Watch as your dog learns to nudge and paw away the bones to reveal the reward!
+//REDUCES BOREDOM & DESTRUCTIVE BEHAVIOR: The Dog Smart interactive dog treat puzzle provides your pup with a fun and rewarding game that can help redirect destructive behavior while supporting their mental wellbeing.
+//BPA, PVC & PHTHALATE FREE: Nina Ottosson by Outward Hound interactive treat dog puzzles are designed with your pets health in mind from food safe materials that you can trust. Easy to clean with warm water and soap between uses.
+//PLAY IT SAFE: No toy is indestructible. Do not leave toys with unsupervised pets. Remove and replace toy if damaged.',
+    price: 6.22,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/712wGaV5tjL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Amazon Basics Dog and Puppy Pads, Leak-proof 5-Layer Pee Pads with Quick-dry Surface for Potty Training',
+    description: 'Includes 25 extra large size, heavy duty absorbency pee pads for dogs
+//5-layer construction; super-absorbent core turns liquid into gel on contact
+//Quick-dry surface with built-in attractant helps aid in potty training; leakproof plastic lining keeps floors safe from damage
+//For indoor/outdoor/car use; ideal for puppy training, assisting senior dogs, or as an alternative when outdoor isn’t an option
+//Pad Dimensions: XL pads measure 28 x 34 inches (LxW); center pad measures 23.6 x 29.5 inches (LxW) with a 2.2-inch plastic border on all sides to help prevent overflow',
+    price: 14.99,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/71-ah0GCzzL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Earth Rated Dog Poop Bags, Extra Thick and Strong Poop Bags for Dogs, Guaranteed Leak-proof, 15 Doggy Bags Per Roll, Each Dog Poop Bag Measures 9 x 13 Inches',
+    description: '✅ BAG POOP BETTER: 9”x13” doggy bags keep your hands safe, and odor contained. More than enough capacity for large dogs! A customer recently said "I love these bags - much thicker than the ones you buy at the store. The scent is not overpowering."
+//✅ EARTH FIRST, PROFIT SECOND: 120 premium pet poo bags are included in each order. A total of 8 rolls that each include 15 dog bags and a 100% leak-proof guarantee. We use recycled materials in our packaging and roll cores because details matter.
+//✅ STRESS-FREE WALKS: Poop doesnt smell like roses: Our odor blocking lavender-scent locks in that stank for good without being overpowering. Simple to open and tie securely so you can enjoy a stress-free walk with your best bud. No need to rush!
+//✅ PAIR WITH DISPENSER: Each bag roll comfortably fits in your pocket, but customers prefer to pair Earth Rated bags with our leash dispenser. Quick and easy access make this an awesome duo! Let us do the heavy lifting while you tackle your walks in style.
+//💚 WHY EARTH RATED? Were a Canadian company with top-notch customer service, always ready to help! Plus all our products are backed by a 100% satisfaction guarantee! We work closely with animal shelters & rescues across North America donating as many bags as we can.',
+    price: 6.99,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/716vTTnfVfL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'PetSafe ScoopFree Premium Crystal Cat Litter - Includes 2 Bags (4.5 lb Each) of Litter - Works with Any Traditional Litter Box, Absorbs Faster than Clay Clumping, Low Tracking for Less Mess',
+    description: 'COMPATIBLE LITTER BOXES: Works with any traditional litter box and the PetSafe ScoopFree Reusable Litter Tray
+//CONVENIENT PORTIONS: Includes 2 pre-portioned bags of premium PetSafe crystal litter with original scent, ready for use (each bag weighs 2.0 kg)
+//UNBEATABLE ODOR CONTROL: Absorbs urine and dries solid waste for 5x better odor control than clumping clay litters
+//LESS MESS: Premium PetSafe Crystal Litter is low-tracking and 99% dust-free',
+    price: 20.89,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/81bwDX4KDrS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Benebone Wishbone Durable Dog Chew Toy for Aggressive Chewers, Real Flavors, Made in USA',
+    description: 'DURABLE, LONG-LASTING – Pint-sized super chewer? Bring it on. Benebones are tougher than real bones and last for weeks.
+//REAL BACON! – We use only 100% REAL BACON for flavor. Trust us, dogs can tell the difference.
+//EASY TO PICK UP AND CHEW – Our Wishbone and Dental Chew are curved for a paw-friendly grip so your pup can quickly grab them and get a good chew going. Think about it: dogs don’t have thumbs.
+//USA Made – We make and source everything in the USA
+//HAPPINESS, GUARANTEED – Have an issue? Want to chat? Reach out to us directly and you’ll get a real person whose sole job is to make you and your pup happy.',
+    price: 12.56,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/91iW17UjtEL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Chuckit! Ultra Ball',
+    description: 'ULTRA BOUNCE BALL: This squeaker ball toy for dogs entices play with fun sounds & high-bounces. Play fetch at the lake or pool thanks to the lightweight, buoyant design. Compatible with Chuckit! ball launcher.
+//TOUGH & DURABLE: Rubber ball for dogs has a textured surface & a thick rubber core for aggressive chewers yet is soft on dogs mouths.
+//PET TOYS: Get ready for bonding & fun with your dogs & cats! Check out a variety of our pet toy products such as frisbees, perches & mirrors for birds, prey wand toys for cats, plush toys, light-up interactive toys & more.
+//CHUCKIT! FETCH TOYS: Chuckit! creates toys that enrich the human-animal bond & bright colors help dogs & puppies stay engaged. Checkout Chuckit! for ball launchers, bouncy balls, frisbees, indoor dog toys, glow toys & more!
+//JUST FOR PETS: Petmate makes a variety of pet products for dogs, cats, chickens & other small furry friends! Check out our brands such as Aspen Pet, Arm & Hammer, Booda, Chuckit!, Jackson Galaxy & more!',
+    price: 3.86,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/81IefliREvL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Sheba Perfect Portions Paté Wet Cat Food Tray Variety Packs',
+    description: 'Contains (12) 2.6-oz. twin pack trays of SHEBA PERFECT PORTIONS Pate Multipack: (6) Savory Chicken and (6) Delicate Salmon Grain Free Cat Food (24 servings total)
+//Easy-to-use cat food trays: Just snap, peel, and serve
+//Individual trays of fresh meals mean that youll have zero messy leftovers, unlike canned cat food
+//Made without grains, corn, wheat, or soy… plus, no artificial flavors or preservatives, so you can feel good about the wet pate you feed your feline
+//Delightfully flavorful, this smooth and savory pate features a light and delectable texture cats cant resist in delicious chicken and salmon flavors.From kitten to mature senior cat, SHEBA Wet Cat Food makes a tasty meal regardless of age',
+    price: 9.69,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/71boJMJlNML._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Fresh Step Scented Litter with The Power of Febreze, Clumping Cat Litter',
+    description: 'Clumping litter: Fight litter box odors with the strength of Fresh Step litter partnered with the power of febreze in our easy to scoop, clumping clay cat litter in a mountain spring scent that deodorizes extreme cat litter smells
+//Odor control cat litter: Specially formulated for multi-cat litter boxes, this cat litter has a 10-day odor control with ammonia block technology activated charcoal that traps and eliminates kitty litter odor
+//Low dust litter: For cleaner surfaces and clearer air, we developed a low dust formula with paw activated fragrance thats released every time your cats use the litter box
+//Scoop able kitty litter: Make cleaning easy with the clump lock technology that absorbs liquid and forms tight clumps leaving behind no stinky crumbles
+//Fresh Step cat litter: Made for extreme litter box odors, this scented Fresh Step Scoop able cat litter is created with your cats health and happiness in mind',
+    price: 9.49,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/81iceP6tHsL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Wobble Wag Giggle Ball, Interactive Dog Toy, Fun Giggle Sounds When Rolled or Shaken, Pets Know Best, As Seen On TV',
+    description: 'PLAYTIME ANYTIME OF DAY Wobble Wag Giggle Glow in The Dark is a fun way for your pup to play day or night! The glow in the dark material illuminates in the dark so your dog can play no matter the time of day!
+//GREAT FOR ALL DOGS Young or old, big or small, this toy is fun for all! Wobble Wag Giggle Glow in the Dark is sure to keep your dog active & entertained throughout the day with endless play! Charge the glow by placing the ball under a light source before play!
+//HAPPY, HEALTHY & FIT! By engaging your dog with “play-with-me” giggling sounds when the ball is shaken or rolled, your pup’s natural curiosity and play instincts will kick in, watch with delight as your pup plays in the dark or light!
+//PERFECT FOR INDOOR AND OUTDOOR PLAY Whether your dog likes to play in the park or in your home Wobble Wag Giggle Glow in the Dark is fun! Watch as your pup leaps and bounds when they hear these playful sounds! This is an interactive toy meant to keep your dog entertained and active.
+//DURABLE AND SAFE This toy is made with flexible and durable, pet-safe, phthalate free vinyl. As always, make sure to supervise your pet during playtime!',
+    price: 14.99,
+    department: 'Pet Supplies',
+    picture_url: 'https://m.media-amazon.com/images/I/8115RQuGCEL._AC_SL1500_.jpg'
+)
+
+# Smart Home
+Product.create!(
+    name: 'Amazon Smart Plug, Works with Alexa – A Certified for Humans Device',
+    description: 'Amazon Smart Plug works with Alexa to add voice control to any outlet.
+//Certified for Humans - Struggle-free, tinker-free, stress-free. No patience needed—its actually simple.
+//Schedule lights, fans, and appliances to turn on and off automatically, or control them remotely when you’re away.
+//Simple to set up and use—plug in, open the Alexa app, and get started in minutes.
+//Compact design keeps your second outlet free.
+//No smart home hub required—set up routines and schedules through the Alexa app.
+//See tips on saving energy and estimate your light’s consumption with the Alexa energy dashboard.',
+    price: 24.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/41couS+UODL._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Echo Dot (3rd Gen, 2018 release) - Smart speaker with Alexa - Charcoal',
+    description: 'Meet Echo Dot - Our most compact smart speaker that fits perfectly into small spaces.
+//Improved speaker quality - Better speaker quality than Echo Dot Gen 2 for richer and louder sound. Pair with a second Echo Dot for stereo sound.
+//Voice control your music - Stream songs from Amazon Music, Apple Music, Spotify, Sirius XM, and others.
+//Ready to help - Ask Alexa to play music, answer questions, read the news, check the weather, set alarms, control compatible smart home devices, and more.
+//Voice control your smart home - Turn on lights, adjust thermostats, lock doors, and more with compatible connected devices. Create routines to start and end your day.
+//Connect with others hands-free - Call friends and family who have the Alexa app or an Echo device. Instantly drop in on other rooms in your home or make an announcement to every room with a compatible Echo device.
+//Alexa has skills - With tens of thousands of skills and counting, Alexa is always getting smarter and adding new skills like tracking fitness, playing games, and more.
+//Designed to protect your privacy – Amazon is not in the business of selling your personal information to others. Built with multiple layers of privacy controls including a mic off button.',
+    price: 19.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/6182S7MYC2L._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'ntroducing Blink Video Doorbell | Two-way audio, HD video, motion and chime app alerts and Alexa enabled — wired or wire-free (Black)',
+    description: 'Answer your door no matter where you are from your smartphone with 1080p HD day and infrared night video and two-way audio.
+//Experience long-lasting battery life, custom alerts, privacy settings, and more.
+//Get alerts when motion is detected or someone presses Video Doorbell. Connect to existing doorbell wiring or pair with a Sync Module (sold separately) to engage live view and two-way audio on demand.
+//Choose to save and share clips in the cloud with a free 30-day trial of the Blink Subscription Plan or locally with the Sync Module 2 and USB drive (each sold separately).
+//Designed for every home, go wire-free or connect to existing doorbell wiring to also sound in-home chime.
+//Set up yourself in minutes with the two included AA lithium batteries then connect to wifi in the app.
+//Works with Alexa — receive alerts and answer with two-way audio. When wired or paired with a Sync Module, just ask Alexa to answer the front door.
+//Includes one Video Doorbell, 2 AA 1.5V Lithium Batteries, 4 Screws, 1 Case Opening Tool. Does not include Sync Module 2 which can be found in all “Systems” above (recommended for optimal use while on battery).',
+    price: 34.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/41te-uzWxDL._SL1000_.jpg'
+)
+Product.create!(
+    name: 'Echo Dot (4th Gen, 2020 release) | Helpful by nature, private by design with Alexa | Charcoal',
+    description: 'Meet the Echo Dot - Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.
+//Voice control your entertainment - Stream songs from Amazon Music, Apple Music, Spotify, SiriusXM, and others. Play music, audiobooks, and podcasts throughout your home with multi-room music.
+//Ready to help - Ask Alexa to tell a joke, play music, answer questions, play the news, check the weather, set alarms, and more.
+//Control your smart home - Use your voice to turn on lights, adjust thermostats, and lock doors with compatible devices.
+//Connect with others hands-free - Call friends and family who have the Alexa app or an Echo device. Instantly drop in on other rooms or announce to the whole house that dinners ready.
+//Designed to protect your privacy – Amazon is not in the business of selling your personal information to others. Built with multiple layers of privacy controls including a mic off button.',
+    price: 29.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/714Rq4k05UL._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Echo Dot (4th Gen) with Clock | Twilight Blue with Sengled Bluetooth Color bulb | Alexa smart home starter kit',
+    description: 'This bundle contains Echo Dot (4th Gen) with Clock Twilight Blue and Sengled Bluetooth Color bulb.
+//Control your lights without getting up - Use your voice to control your smart light bulb by saying, "Alexa, turn on the lights" for a hands free experience.
+//Simple to set up and use - To set up your bulb, plug in and set up your Echo device, plug in your bulb, and ask, “Alexa, discover my devices." Use your voice to name your bulb and begin using immediately.
+//No smart home hub required - Set up routines and schedules through the Alexa app.
+//Expand your Smart Home - Easily manage your smart home using your voice to turn on lights, adjust thermostats, and lock doors with compatible devices.
+//Meet Echo Dot with clock - Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.
+//Brilliant colors to light up every moment - Turn the color changing light bulb on/off, dim, brighten, set up routines, schedules, and more using the Amazon Alexa App. Use 16 Million brilliant and soft colors plus tunable whites to create the perfect mood; High brightness (800 lumens); Great for parties, entertaining and everyday use.
+//Certified for Humans, struggle-free, tinker-free, stress-free. No patience needed - its actually simple.',
+    price: 34.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/81cgyvKpajS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Ring Video Doorbell Wired with Ring Chime',
+    description: 'This bundle includes Ring Video Doorbell Wired and Ring Chime
+//1080p HD wired video doorbell with two-way talk, advanced motion detection, standard 2.4 GHz connectivity and customizable privacy settings
+//Get real-time notifications sent straight to your phone, Alexa device, or Ring Chime so you’ll always know when someone stops by
+//Advanced motion detection helps you know when someone’s at your front door before they ring your doorbell
+//Night vision with sharp contrast ensures you’ll never miss a detail – even in the dark
+//Hardwire Video Doorbell Wired using your existing doorbell wiring and the included tool kit for around-the-clock power and peace of mind
+//With a Ring Protect Plan (subscription sold separately), record all your videos, review what you missed for up to 60 days, and share videos and photos
+//Connect with Alexa to hear alerts on your compatible Echo device or see a Live View with an Echo device with screen. Talk to visitors by saying “Alexa, talk to the front door.”',
+    price: 79.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/51FHPa9m1cL._SL1000_.jpg'
+)
+Product.create!(
+    name: 'All-new Echo Show 5 (2nd Gen, 2021 release) | Smart display with Alexa and 2 MP camera | Charcoal',
+    description: 'See your day clearly with Alexa at the ready - Set alarms and timers, check your calendar or the news, make video calls with the 2 MP camera, and stream music or shows - all with your voice.
+//Add Alexa to your nightstand - Ease into the day with a routine that turns compatible lights on gradually. Or wake up to your news update, the weather forecast, and your favorite music.
+//Manage your smart home - Look in when youre away with the built-in camera. Control compatible devices like cameras, lights, and more using the interactive display, your voice, or your motion.
+//Connect with video calling - Use the 2 MP camera to call friends and family who have the Alexa app or an Echo device with a screen. Make announcements to other compatible devices in your home.
+//Be entertained - Ask Alexa to play TV shows and movies via Prime Video, Netflix, and more on the 5.5" screen. Or stream favorites from Amazon Music, Apple Music, Spotify, and others. Subscriptions for some services required.
+//Put photos on (smart) display - Use Amazon Photos or Facebook to turn your home screen into a digital frame.
+//Designed to protect your privacy - Amazon is not in the business of selling your personal information to others. Built with multiple layers of privacy controls including a mic/camera off button and a built-in camera shutter.',
+    price: 44.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/51iobpaEM5S._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Blink Outdoor - wireless, weather-resistant HD security camera, two-year battery life, motion detection, set up in minutes – 2 camera kit',
+    description: 'Blink Outdoor is a wireless battery-powered HD security camera that helps you monitor your home day or night with infrared night vision.
+//With long-lasting battery life, Outdoor runs for up to two years on two AA lithium batteries (included).
+//Store video clips and photos in the cloud with the Blink Subscription Plan and save events locally to the Blink Sync Module 2 via a USB flash drive (sold separately).
+//Outdoor is built to withstand the elements to help you protect your home inside or out, come rain or shine.
+//Designed so you can set up yourself in minutes. No wiring, no professional installation required.
+//Get motion detection alerts on your phone with the option to customize motion zones in the Blink Home Monitor app so you’re only alerted when you need to be.
+//See, hear, and speak to visitors with live view in real time and two-way audio features on your Blink app.
+//Works with Alexa – use your voice to monitor your home through supported Alexa-enabled devices.
+//Includes two Blink Outdoor cameras and one Sync Module 2.',
+    price: 99.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/41lLBXd-5YL._SL1000_.jpg'
+)
+Product.create!(
+    name: 'Echo Auto- Hands-free Alexa in your car with your phone',
+    description: 'Add Alexa to your car - Connects to the Alexa app on your phone and plays through your car’s speakers via auxiliary input or your smartphone’s Bluetooth connection. Includes Vent Mount.
+//Designed for the road - With 8 microphones and far-field technology, Echo Auto can hear you over music, A/C, and road noise.
+//Go beyond radio - Voice control Echo Auto through the Alexa app to stream from Audible, Amazon Music, Apple Music, Spotify, SiriusXM, and radio stations with TuneIn and iHeartRadio.
+//Just ask - Use your voice to play music, check the news, make calls, add to your to do-list, set reminders, pay for gas, and more.
+//Do More with Auto Mode – Turn your phone into a driver-friendly display that complements your Echo Auto. See whats playing and save time with easy-touch shortcuts to your favorite places, people, and content.
+//Designed to protect your privacy – Amazon is not in the business of selling your personal information to others. Built with multiple layers of privacy controls including a mic off button.
+//Check for compatibility – Echo Auto is not compatible with all cars and phones. See if it will work for you below.',
+    price: 49.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/31X1pWv1CXL._AC_.jpg'
+)
+Product.create!(
+    name: 'Ring Chime Pro',
+    description: 'Bring flexibility, convenience, and peace of mind to your home with Chime Pro, a three-in-one solution that includes a wifi extender for your Ring cameras and doorbells, a nightlight, and a chime box to hear notifications for your Ring cameras and doorbells.
+//Extend your wifi signal up to 2000 sq. ft to boost the network for all your Ring doorbells and cameras.
+//Hear real-time notifications when your connected cameras and doorbells detect motion, or when someone rings your doorbell.
+//Easily set up by plugging into a standard outlet and connecting via wifi.
+//Includes a built-in nightlight that automatically turns on for added peace of mind.
+//Choose from a variety of chime tones, adjust the volume to your ideal setting, and temporarily snooze alerts all from the Ring app.
+//Connectivity: 802.11 b/g/n wifi connection 2.4 or 5.0 GHz.',
+    price: 49.99,
+    department: 'Smart Home',
+    picture_url: 'https://m.media-amazon.com/images/I/81WsSyAYxHL._SL1500_.jpg'
+)
+
+# Sports & Outdoors
+Product.create!(
+    name: 'Hydro Flask Water Bottle - Stainless Steel, Reusable, Vacuum Insulated with Standard Mouth Flex Lid',
+    description: 'New Hydro Flask water bottle design does not feature a registered trademark symbol next to the logo
+//Hydro Flask insulated water bottle is dishwasher safe; Slip-free powder coating wont sweat
+//Hydro Flask metal water bottles keep the coldest drinks icy cold and hot drinks piping hot for hours
+//Reusable water bottle is BPA-free, phthalate-free, and made of stainless steel; fits car cup holders
+//Hydro Flask water bottles come with a limited lifetime warranty against manufacturing defects',
+    price: 22.46,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/51I1CmBZkjL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Under Armour Mens Tech 2.0 Short-Sleeve T-Shirt',
+    description: '100% Polyester
+//Imported
+//Pull On closure
+//Machine Wash
+//UA Tech fabric is quick-drying, ultra-soft & has a more natural feel
+//Material wicks sweat & dries really fast
+//Tall Sizes: All tall sizes are 2"/5 cm longer than regular sizes. Tall sizes are marked with a T behind the size and are only available for select styles',
+    price: 18.75,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/91Cz8aWrAnL._AC_UY879_.jpg'
+)
+Product.create!(
+    name: 'Introducing Amazon Halo View fitness tracker, with color display for at-a-glance access to heart rate, activity, and sleep tracking – Active Black – Small/Medium',
+    description: 'More than just counting steps — Access key Halo health metrics like heart rate, Activity points, Sleep score, and on-demand blood oxygen levels on the Halo View color touch display.
+//Halo membership included — Purchase includes 12 months of full access to exclusive membership features, workouts, and programs. Auto-renews at $3.99/month + tax. To manage your membership, visit Your Account › Memberships & Subscriptions.
+//Move better — Get a Movement Assessment with the Halo app and a personalized exercise program to help improve your movement health over time.
+//Recharge and refuel — Measure the quantity and quality of your sleep, and discover daily meditations and delicious recipes from WW, Whole Foods Market, and more.
+//Discover more — Access an ever-growing library of expert-backed, on-demand workouts and other ways to stay healthy.
+//Go deeper — Measure your body fat percentage using just your smartphone camera and the Halo app and analyze your tone of voice with the Halo app.
+//On-the-go control — Receive text notifications, start live workouts, and get move reminders right from your wrist.
+//Halo works with Alexa - Ask your Alexa-enabled device to tell you your health summary, activity score, sleep quality, and more. Visit settings within the Halo app and click on "Connect Alexa" to enable.',
+    price: 49.99,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/51u6VxGdpHL._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Hydro Flask Water Bottle with Straw Lid - Stainless Steel, Reusable, Vacuum Insulated- Wide Mouth',
+    description: 'New Hydro Flask water bottle design does not feature a registered trademark symbol next to the logo
+//Dishwasher safe water bottle allows quick and easy cleaning; Slip-free powder coating wont sweat
+//Hydro Flask metal water bottles keep the coldest drinks icy cold and hot drinks piping hot for hours
+//Reusable water bottle is BPA-free, phthalate-free, and made of stainless steel; lid not leak-proof',
+    price: 41.21,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/61TS1UttTdL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'LifeStraw Personal Water Filter for Hiking, Camping, Travel, and Emergency Preparedness',
+    description: 'Removes bacteria & parasites: The microfiltration membrane removes 99.999999% of waterborne bacteria (including E. coli and salmonella), and 99.999% of waterborne parasites (including giardia and cryptosporidium)
+//Removes microplastics: Removes the smallest microplastics found in the environment (down to 1 micron), and reduces turbidity down to 0.2 microns
+//Rigorous Testing: All claims are verified with laboratories using standard testing protocols set by the US EPA, NSF, ASTM for water purifiers
+//Long Lifetime: The microbiological filter will provide 4,000 liters (1,000 gallons) of clean and safe drinking water with proper use and maintenance
+//Make an Impact: For every LifeStraw product purchased, a school child in need receives safe drinking water for an entire school year.BPA Free materials',
+    price: 12.99,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/417QFsHEJWL._AC_SL1301_.jpg'
+)
+Product.create!(
+    name: 'KardiaMobile Single-Lead Personal EKG Monitor | FDA-Cleared | Detects AFib',
+    description: 'EKG ON THE GO: Take unlimited medical-grade EKGs anytime, anywhere. No subscription required.
+//EKG HISTORY: Store your EKGs on your phone, and email to your doctor with the press of a button.16 bit resolution
+//TRUSTED BY DOCTORS: FDA-Cleared to detect Atrial Fibrillation, Bradycardia, Tachycardia or Normal Heart Rhythm in 30 seconds.
+//EASY TO USE: Simply place your fingers on the sensors—no wires, patches or gels required.
+//Works with most smartphones & tablets. See compatible devices below. Not recommended for use with pacemakers and ICDs and does not detect heart attack',
+    price: 69.00,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/61ZRNB0MOuL._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'Rawlings NFL Downfield Youth Football (All Team Options)',
+    description: '#1 YOUTH SIZE FOOTBALL FOR ATLANTA FALCONS FANS
+//5X MORE GRIP, this football features Rawlings patented HD GRIP, which means it has 5 times more pebbles for gripping compared to standard rubber patterns
+//FEATURES BOLD FALCONS LOGOS ON FRONT AND BACK on team color molded rubber
+//IDEAL SIZE FOR KIDS OR ADULTS, this football is small enough to fit in a kids hand, but also perfect for adults wanting to throw long distances
+//PERFECT STOCKING-STUFFER FOR THE HOLIDAYS, any Falcons fan will be ecstatic to receive this gift
+//OFFICIALLY LICENSED NFL PRODUCT, this ball comes pumped up and ready to play',
+    price: 9.59,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/91wNy68ksAL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'BALEAF Womens Fleece Lined Winter Leggings High Waisted Thermal Warm Yoga Pants with Pockets',
+    description: '87% Polyester, 13% Spandex
+//Machine Wash
+//Breathable and moisture-wicking fabric lift the sweat quickly to keep you comfortable. You can do any activities outdoor during winter season with ease!
+//These high waisted yoga leggings for women have two smart phone pockets, which easily holds your phone or other essentials. There’s a hidden key pocket in the waistband for additional items.
+//BALEAF new winter yoga pants feature a high waistband for better tummy control. These high rise athletic leggings also act as comfortable shapewear that keeps you hugged in and looking slim. "V" shape waistband that make you look stylish during your favorite workouts.
+//These cold weather leggings come with a gusset crotch to maximize free movement and interlock seams to minimize rubbing and chafing make these leggings for women the perfect yoga pant for working out or going out.
+//These black workout leggings are top-notch quality, they come in variety of colors, all with the super comfy fleece lining. Our women’s running leggings are perfect for layering or wearing solo. They are designed for yoga, running, hiking, cycling, skiing and ice skating. These active leggings must become your favourite go-to winter pants.',
+    price: 30.99,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/51OXmeyaagL._AC_UY879_.jpg'
+)
+Product.create!(
+    name: 'Iron Flask Sports Water Bottle - 14 Oz, 3 Lids (Straw Lid), Leak Proof, Vacuum Insulated Stainless Steel, Double Walled, Thermo Mug, Metal Canteen',
+    description: 'INSULATED SPORTS WATER BOTTLE: Goodbye sweat! The double wall insulation makes the Iron Flask sweat-free! It keeps your drink COLD for up to 24 hours, and HOT for up to 12 hours. *NOTE: ONLY the 14 Oz, 18 Oz, & 22 Oz fit in cupholders*
+//3 LIDS: YES, Iron Flask comes with THREE different 100% LEAK PROOF lids. Carabiner Straw Lid with 2 Straws, Flip Lid, and a Stainless Steel Lid! *NOTE: The stainless steel lid is plastic from inside and stainless steel from outside*
+//18/8 PREMIUM STAINLESS STEEL: The Iron Flask is made of 18/8 Stainless steel that is 100% BPA free and non-toxic. It will never leave a metal taste or rust. HAND WASH ONLY WITH SOAPY HOT WATER!
+//FUNCTIONAL DESIGN: The powder coat exterior finish is a classic. It assures that you stand out with a very durable and elegant bottle. Our logo is now LASER ENGRAVED to assure the highest quality as well.
+//100% SATISFACTION GUARANTEED: We guarantee that the high quality Iron Flask bottle will surely please you! If, for any reason, you are not 100% satisfied with the Iron Flask, we will issue you a full refund or an exchange!',
+    price: 17.95,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/71d2XKQj4uL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'GlowCity Glow in The Dark Basketball - Light Up, Indoor or Outdoor Basketballs with 2 LED Lights and Pre-Installed Batteries - Gift Ideas for Teen Boys and Girls﻿',
+    description: 'Bright - Let there be light with this glow in the dark ball for kids, teens, and adults. It features not 1, but 2 LEDs for up to 30 hours of evening play.
+//Impact Activated - Ready to glow up the night? Our outdoor and indoor basketball lights up from the inside with a bounce and automatically shuts off when not in use.
+//Durable - Each light up basketball features a sturdy rubber exterior to help keep the glowing lights secured in their compartments, on and off the court.
+//Setup - All LED basketball toys come with instructions and 2 pre-installed batteries. Simply inflate using a pump to start swishing in the shots.
+//Basketball Gifts - Gift time is game time. If youre in search of the perfect sports gifts for boys and girls, these glow in the dark balls will be a slam dunk on birthdays, holidays, and other occasions.',
+    price: 45.97,
+    department: 'Sports & Outdoors',
+    picture_url: 'https://m.media-amazon.com/images/I/81a5j9VJP-L._AC_SL1500_.jpg'
+)
+
+# Toys and Games
+Product.create!(
+    name: 'SHASHIBO Shape Shifting Box - Award-Winning, Patented Fidget Cube w/ 36 Rare Earth Magnets - Extraordinary 3D Magic Cube – Shashibo Cube Magnet Fidget Toy Transforms Into Over 70 Shapes (Blue Planet)',
+    description: 'Unlike other puzzle box toys that turn out disappointing & dull, the patented, award-winning Shashibo fidget box features 36 rare earth magnets for an innovative design that transforms into over 70 shapes. Fits comfortably in the hand for hours of mind-challenging fun, stimulate the senses with unlimited creative possibility! Can you master the Shape-Shifting Box?
+//Nothing compares to the quality & unique design of the Shashibo, durably constructed of premium injection-mold plastic, 36 rare earth magnets, and a tear-proof, matte or high-gloss surface. Each magnetic puzzle features 4 unique, artistic patterns of vibrant, mesmerizing artwork, for an ever-changing array of beauty at your fingertips.
+//Collect & Connect – With the strong internal magnet system of our fidget puzzle boxes, you can connect multiple magnetic cubes to build even larger structures and sculptures – for the ultimate satisfying magnetic fidget toy and brain teaser. Collect all 12 designs to create vibrantly patterned, spellbinding 3D art!
+//A Transformational Gift – Our fidget magnet cubes make great sensory stimulation puzzle gifts and STEAM & STEM toy gifts for all ages. With every satisfying click, our shape shifting puzzle box ’s calming, therapeutic effect soothes away stress & nerves. Try our Gift Box Set of 4: the ultimate fidget toy set for loved ones to build killer extended structures!
+//At Fun in Motion Toys, we create toys that stimulate the mind, body & imagination. Designed in the U.S. and Germany, our award-winning magnet cube is made to challenge the senses and build skill & coordination and bring people together for hours of fun. Your happiness is our #1 goal! If you need any help with your Shashibo transforming cube, our Happiness Engineers are standing by. Click our Storefront to see our entire range of toys.',
+    price: 25.00,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/61g7PxyAg6S._AC_SL1000_.jpg'
+)
+Product.create!(
+    name: 'TeeTurtle | The Moody Reversible Octopus Plushie | Patented Design | Sensory Fidget Toy for Stress Relief | Light Pink + Pink | Angry + Rage | Show Your Mood Without Saying a Word!',
+    description: 'The #1 best-selling octopus now comes with NEW MOODS!
+//The adorable, moody plushie that has taken TikTok by storm! Your favorite creators have it, and now you can too!
+//This sensory fidget toy is perfect for stress relief, and lets you show your mood without saying a word! Get this award-winning Octopus Plushie to show your friend and family how youre really feeling.
+//Kids and adults alike will love the supersoft fabric and portable size of the plushies. Not to mention, they flip INSIDE OUT, thanks to TeeTurtle’s patented Reversible Plushie design.
+//Give it to your toddler to intercept their next meltdown, or put it on your desk at work so coworkers know when to stay away!
+//Collect them all! TeeTurtle makes reversible unicorns, narwhals, cats, dogs, pandas, turtles, and more, in tons of different colors!',
+    price: 15.00,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/41RdNEoQ5DS._AC_.jpg'
+)
+Product.create!(
+    name: 'LeapFrog 100 Animals Book, Green',
+    description: 'Six double-sided, interactive pages feature animals from 12 categories such as the forest, the ocean and the shore
+//Explore three play modes that teach about animal names, animal sounds and fun facts
+//This fully bilingual book lets kids learn about animals and sing songs in English and Spanish
+//Fun facts about animals provide an early introduction to science concepts
+//Intended for ages 18+ months; requires 2 AA batteries; batteries included for demo purposes only; new batteries recommended for regular use',
+    price: 15.99,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/71SDfj4aXHL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'LOL Surprise Winter Chill Dolls with 8 Surprises Including Collectible Doll with Winter Fashion Outfits, Accessories, Holiday Ornament Ball - Gift for Kids, Toys for Girls Boys Ages 4 5 6 7+ Years',
+    description: 'LIMITED EDITION DOLLS: Did you miss out on the LOL Surprise Holiday Present Surprise dolls from last year? Well youre in luck because now theyre back in a winter theme! Introducing the LOL Surprise Winter Chill dolls!
+//SPARKLY AND GLITTERY FEATURES: Each limited edition doll got a sparkly makeover with glitter details, new fashions and wintery accessories.
+//UNBOX 8 SURPRISES: (1) Secret Message; (2) Bottle; (3) Outfit; (4) Outfit Accessory; (5) Shoes; (6) Collectible Sticker; (7) LOL Surprise Winter Chill limited edition doll; (8) Ornament & Display.
+//WATER SURPRISE: Feed or bathe your doll for a water surprise.
+//HOLIDAY ORNAMENT PACKAGING: Ornament ball can be used as a display for your dolls or hung on the tree as an ornament.',
+    price: 6.00,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/81VQIrTtegL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Crayola Light Up Tracing Pad with Eye-Soft Technology, Amazon Exclusive, Gift, Ages 6, 7, 8, 9, 10',
+    description: 'CRAYOLA LIGHT UP TRACING PAD: Features a Light Up Tracing Pad with Eye-Soft Technology and White LEDS, 3-Mode Switch (Off/On/Auto), 20 Tracing Paper Sheets, 12 Short Colored Pencils, and 1 Number 2 Pencil (3 AA Batteries Required. Sold Separately)
+//EYE SOFT TECHNOLOGY: Automatically adjusts for low-light conditions by reducing glare from standard white LEDs
+//LIGHT UP TOY: The evenly lit surface makes tracing lines easy to see, even in pillow forts or camping tents with low lighting, Plus, it perfectly pairs with glow in the dark toys at home
+//GIFT FOR GIRLS & BOYS: A birthday or holiday gift you can rely on for big smiles and hours at a time of imaginative fun, Recommended for ages 6 and up',
+    price: 27.99,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/81oiDvjhxgL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'ThinkFun Gravity Maze Marble Run Brain Game and STEM Toy for Boys and Girls Age 8 and Up – Toy of the Year Award Winner',
+    description: 'Trusted by Families Worldwide - With over 50 million sold, ThinkFun is the worlds leading manufacturer of brain games and mind challenging puzzles
+//Develops critical skills – Playing your way through the challenges builds spatial reasoning and planning skills, and is partly an engineering and building toy that provides a great stealth learning experience for young players
+//What you get – Gravity Maze is a combination logic game, marble run, and STEM toy thats one of the best gifts you can buy for boys and girls age 8 and up It contains 60 challenges from beginner to expert, a game grid, 9 towers, 1 target piece, and 3 marbles
+//Clear instructions – Easy to learn with a clear, high quality instruction manual You can start playing and solving right away
+//Comes with multi-level challenges - Gravity Maze comes with 60 beginner to expert challenges that become increasingly difficult as you play through them',
+    price: 29.99,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/81vUXh6ktXL._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Original Tamagotchi - 90s',
+    description: 'The Original Tamagotchi digital pet you loved in 1997 is back with the original programming!
+//Feed it, turn lights on/off, play with it, give it medicine, flush after it’s used the bathroom, check it’s health and discipline your Tamagotchi if he bothers you when he’s happy, fed and all cleaned up
+//Includes Character game where you have to guess which way the Tamagotchi will move next!
+//90s-themed shell with yellow Tamagotchi, lavender frame and bright pink buttons, plus original programming and characters
+//Raise your Tamagotchi from egg to child to Adult and how you take care of it will decide which of the 7 Adults you’ll get',
+    price: 19.99,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/819ZUKGJraS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'NATIONAL GEOGRAPHIC Amazing Chemistry Set - Mega Chemistry Kit with Over 15 Science Experiments, Make Glowing Worms, a Crystal Tree, Fizzy Solutions, and More, Great STEM Gift for Girls and Boys',
+    description: 'INSPIRING SCIENCE FOR KIDS - Youve come to the right place for a kids science kit with massive variety! Your kids will make bubbling, color-changing solutions, glowing test tubes, a colorful bouncy ball, glowing worms, and a whole lot more.
+//A TOTAL OF 45 SCIENCE EXPERIMENTS FOR KIDS - The chemistry set itself comes with more than 15 experiments, but theres also a bonus guide with 30 additional activities using common household items! This science kit for kids is a great STEM resource!
+//EASY-TO-FOLLOW INSTRUCTIONS - Other science kits for kids wish they had an instruction booklet this fun Every experiment has illustrated, step-by-step instructions that are easy to understand. Your kids will feel like real scientists as they play!
+//HANDS-ON STEM - Our science toys are known for being hands-on, and this kids activity kit is no different. Your kids will use real scientific tools, like test tubes, beakers and pipettes, as they explore the fascinating world of chemistry.
+//SATISFACTION GUARANTEED - Our products are hand-selected to meet the highest quality standards. If your experience is anything less than extraordinary, let us know so we can make it right for you.',
+    price: 37.99,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/A16lpy9fJiS._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Hasbro Gaming CONNECT 4 - Classic four in a row game - Board Games and Toys for Kids, boys, girls - Ages 6+',
+    description: 'Classic Connect 4 game is disc dropping fun
+//Choose yellow or red discs. For 2 players
+//When you get 4 discs in a row you win
+//Includes grid, 2 legs, slider bar, 21 red discs, 21 yellow discs and instructions',
+    price: 5.77,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/81fEiLrmZ8L._AC_SL1500_.jpg'
+)
+Product.create!(
+    name: 'Basic Fun Lite Brite Ultimate Classic Refill Pack - Animal Theme - 10 Reusable Templates - Amazon Exclusive',
+    description: 'Lite-Brite is the most creative way to create art with light! These refill packs are to be used with the Lite-Brite Ultimate Classic main unit (sold separately).
+//Fun, inspiring, creative, and educational – Lite-Brite promotes imagination and hand/eye coordination!
+//Includes 10 design templates (size: 8” wide x 6. 75” high) : Kitty, Puppy, Fish, Turtle, Hummingbird, Cardinal, Dragonfly, Orca Whale, Flamingo and Starfish. Templates are reuseable and are labeled with letters of the colored peg to be inserted in each hole.
+//Package Weight: 0.068 kilograms',
+    price: 9.99,
+    department: 'Toys & Games',
+    picture_url: 'https://m.media-amazon.com/images/I/814-m8sNZSL._AC_SL1500_.jpg'
+)
+
 # user seeds:
 
 demoUser = User.create!(
@@ -1278,12 +2113,12 @@ cart3 = Cart.create!(session_id: 4)
 
 # review seeds:
 
-5000.times do
+8000.times do
     Review.create!(
         headline: Faker::Hipster.words(number: 7).join(" "),
         body: Faker::Hipster.paragraph(sentence_count: rand(2..12)),
         rating: rand(1..5).to_i,
-        product_id: rand(1..100).to_i,
+        product_id: rand(1..175).to_i,
         author_id: rand(1..4).to_i
     )
 end

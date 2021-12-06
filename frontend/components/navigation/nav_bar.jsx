@@ -56,8 +56,7 @@ class NavBar extends React.Component {
                     <GreetingContainer />
                     <div className="nav-returns-container">
                         <div>
-                            <div>Returns</div>
-                            <div className="signout-button">& Orders</div>
+                            <a className="nav-bar-github-link" href="https://github.com/alyoung1991/nozama" target="_blank"><i className="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div className="nav-cart" onClick={() => this.navigateToCart()}>

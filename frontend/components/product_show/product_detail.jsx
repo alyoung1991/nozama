@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import ReviewListItemContainer from './review_list_item_container';
 import CreateReviewFormContainer from './create_review_form_container';
 import { ReviewLink } from '../../util/link_util';
@@ -10,6 +10,7 @@ class ProductDetail extends React.Component {
         super(props);
 
         this.addProductToCart = this.addProductToCart.bind(this);
+        this.handleBackButton = this.handleBackButton.bind(this);
     }
 
     componentDidMount(){
@@ -33,6 +34,11 @@ class ProductDetail extends React.Component {
         this.props.history.push({
             pathname: '/cart/'
         });
+    }
+
+    handleBackButton(){
+        // this.props.history.goBack
+        console.log(this.props.history);
     }
 
     render(){
@@ -92,9 +98,9 @@ class ProductDetail extends React.Component {
                     <div className="product-main-section">
                         <div className="return-row">
                             <div className="return-link-row">
-                                <div className="nav-back-button" onClick={this.props.history.goBack}>
-                                    <div>Back to results</div>
-                                </div>
+                                <Link to="/" className="nav-back-button">
+                                    <div>Back to Home</div>
+                                </Link>
                             </div>
                         </div>
                         <div className="main-row">

@@ -65,8 +65,28 @@ const Splash = () => {
                         </div>
                         <div className="sub-splash-card hidden-card"></div>
                     </div>
-                    <div className="splash-card"></div>
-                    <div className="splash-card"></div>
+                    <div className="splash-card">
+                        <div className="splash-card-heading">Japan Store</div>
+                        <div className="lg-splash-card-image-container">
+                            <img className="lg-splash-card-image" src='https://images-na.ssl-images-amazon.com/images/G/01/jp/JAPAN-STORE/bnr/JS_Single-Category-Card_758x608._SY608_CB653717870_.jpg' alt="japan-store-pic" />
+                        </div>
+                        <div className="black-friday-deal-label">
+                            <div>Early Black Friday</div>
+                        </div>
+                        <div className="splash-card-price">
+                            <div className="deal-price">
+                                <div className="dollar-sign">$</div>
+                                <div className="deal-dollar">1</div>
+                                <div className="deal-cents">95</div>
+                            </div>
+                            <div className="original-price">$2.95</div>
+                        </div>
+                        <div className="splash-card-info">Potato</div>
+                        <div className="splash-card-link">Shop for some more potato</div>
+                    </div>
+                    <div className="splash-card">
+
+                    </div>
                     <div className="splash-card hide-on-shrink"></div>
                     <div className="splash-card hide-on-shrink"></div>
                     <div className="splash-card appear-on-grow"></div>

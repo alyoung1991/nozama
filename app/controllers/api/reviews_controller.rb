@@ -2,6 +2,7 @@ class Api::ReviewsController < ApplicationController
     before_action :ensure_logged_in
 
     def index
+        debugger
         @reviews = Review.get_product_reviews(params[:product_id])
         render :index
     end

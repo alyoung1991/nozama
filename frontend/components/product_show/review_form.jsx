@@ -14,6 +14,7 @@ class ReviewForm extends React.Component {
     navigateToProductShow() {
         const url = `/products/${this.props.match.params.productId}`
         this.props.history.push(url);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 
     handleRatingChange(rating){

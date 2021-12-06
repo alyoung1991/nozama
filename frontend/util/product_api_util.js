@@ -12,6 +12,14 @@ export const fetchProduct = (id) => (
     })
 );
 
+export const fetchReviews = (productId) => (
+    $.ajac({
+        method: 'GET',
+        url: `api/reviews`,
+        data: { productId }
+    })
+)
+
 export const fetchReview = (reviewId) => (
     $.ajax({
         method: 'GET',

@@ -7,6 +7,7 @@ import ProductIndexContainer from "./product_index/product_index_container";
 import ProductShowContainer from './product_show/product_show_container';
 import CreateReviewFormContainer from "./product_show/create_review_form_container";
 import EditReviewFormContainer from "./product_show/edit_review_form_container";
+import DeleteReviewFormContainer from "./product_show/delete_review_form_container";
 import CartContainer from "./cart/cart_container";
 import Footer from "./navigation/footer";
 import { Switch, Route, useLocation } from 'react-router-dom';
@@ -27,6 +28,7 @@ const App = () => {
                 <Route exact path="/products" component={ProductIndexContainer} />
                 <ProtectedRoute path="/products/:productId/review/new" component={CreateReviewFormContainer} />
                 <ProtectedRoute path="/products/:productId/review/:reviewId/edit" component={EditReviewFormContainer} />
+                <ProtectedRoute path="/products/:productId/review/:reviewId/delete" component={DeleteReviewFormContainer} />
                 <Route path="/products/:productId" component={ProductShowContainer} />
                 <Route path="/cart" component={CartContainer} ></Route>
                 <Route exact path="/" component={SplashContainer} />

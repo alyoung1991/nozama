@@ -4,10 +4,15 @@ import { deleteReview } from '../../actions/product_actions';
 import { FaStar } from 'react-icons/fa';
 import { ReviewLink } from '../../util/link_util';
 import EditReviewFormContainer from './edit_review_form_container';
+import DeleteReviewFormContainer from './delete_review_form_container';
 
 class Review extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
     render(){
-        const { review, author, currentUser, productId, destroyReview } = this.props;
+        const { review, author, currentUser, productId } = this.props;
         const { id, rating, body, headline, created_at } = review;
         const dateArray = new Date(created_at).toDateString().split(' ');
         const dateString = `${dateArray[1]} ${dateArray[2]}, ${dateArray[3]}`;
@@ -51,7 +56,13 @@ class Review extends React.Component {
                                 label="Edit">
                             </ReviewLink>
                         </button>
-                        <button className="delete-review-button" onClick={() => destroyReview(review)}>Delete</button>
+                        <button className="delete-review-button" onClick={this.removeReview}>
+                            <ReviewLink
+                                component={DeleteReviewFormContainer}
+                                to={`/products/${productId}/review/${id}/delete`}
+                                label="Delete">
+                            </ReviewLink>
+                        </button>
                         <div className="crud-button-border"></div>
                     </div>
                     ) : (<></>)

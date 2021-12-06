@@ -11,7 +11,7 @@ class ProductShow extends React.Component{
     componentDidMount(){
         setTimeout(() => {
             this.props.fetchProduct(this.props.productId);
-        }, 1000);
+        }, 1500);
     }
 
     render(){

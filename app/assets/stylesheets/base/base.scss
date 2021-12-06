@@ -1261,8 +1261,108 @@ b {
             }
         }
     }
+}
 
-    
+.delete-review-form-container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    .delete-review-form {
+        width: 780px;
+        min-width: 780px;
+        height: fit-content;
+        background-color: #f3f3f3;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .delete-review-sub-container {
+            width: 732px;
+            min-width: 732px;
+            border: 2px solid #FFAF38;
+            border-left-width: 12px;
+            border-radius: 8px;
+            padding: 14px 18px 18px 18px;
+            margin-bottom: 12px;
+            background-color: white;
+
+            .delete-review-form-heading {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: $bold;
+                padding-bottom: 10px;
+
+                i {
+                    color: #ffaf38;
+                    margin-right: 4px;
+                }
+            }
+
+            .delete-review-form-btns-container {
+                margin-top: 8px;
+
+                button {
+                    height: 30px;
+                    width: 40px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 5px #d7d7d7;
+                    font-size: 14px;
+                    margin-right: 5px;
+                    line-height: 20px;
+                    align-self: flex-end;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .no-btn {
+                    background-color: #F7FAFA;
+                    border: 1px solid $product-show-checkout-border-color;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #ececec;
+                    }
+                }
+
+                .yes-btn {
+                    background-color: $review-form-submit-btn-bg-color;
+                    border: 1px solid $review-form-submit-btn-border-color;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #F7CA00;
+                    }
+                }
+            }
+        }
+        
+
+        .delete-review-form-review-info {
+            .review-info-row{
+                display: flex;
+                
+                .delete-review-form-review-rating {
+                    margin-top: -1px;
+                }
+
+                .delete-review-form-review-headline {
+                    font-weight: $bold;
+                    margin-left: 10px;
+                }
+            }
+
+            .delete-review-form-review-body {
+                margin-top: 8px;
+                margin-bottom: 12px;
+                line-height: 20px;
+            }
+        }
+    }
 }
 
 

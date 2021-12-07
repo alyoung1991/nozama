@@ -4,7 +4,6 @@ class Api::CartItemsController < ApplicationController
     end
 
     def create
-        # @product = Product.find(params[:cart_item][:product_id])
         @cart_item = CartItem.new(cart_item_params)
 
         if @cart_item.save
@@ -24,7 +23,8 @@ class Api::CartItemsController < ApplicationController
     end
 
     def destroy
-        @cart = Cart.find(session[:cart_id])
+        @cart = Cart.find(params[:cart_id])
+        @cart_item = @cart.cart_items.find_by(product_id: params[:id])
         @cart_item.destroy
         render json: @cart_item
     end

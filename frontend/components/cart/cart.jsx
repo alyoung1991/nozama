@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class Cart extends React.Component {
+    constructor(props){
+        super(props);
+
+        this.deleteCartItem = this.deleteCartItem.bind(this);
+    }
+    
     componentDidMount(){
         if(this.props.sessionId){
             this.props.fetchCart(1, this.props.sessionId);
@@ -9,8 +15,13 @@ class Cart extends React.Component {
         this.setState({});
     }
 
+    deleteCartItem(cartItem, cartId){
+        this.props.deleteCartItem(cartItem.item, cartId)
+            .then();
+    }
+
     render(){
-        this.props.fetchCart(1, this.props.sessionId);
+        // this.props.fetchCart(1, this.props.sessionId);
         const {cart} = this.props;
         let subTotal = 0;
         let numItems = 0;
@@ -52,7 +63,11 @@ class Cart extends React.Component {
                                 <div className="cart-item-stock-status">In Stock</div>
                                 <div className="cart-item-shipping">Eligible for FREE Shipping <span className="cart-item-free-returns">& FREE Returns</span></div>
                                 <div className="cart-item-department"><span className="cart-item-department-label">Department:</span> {cart_item.item.department}</div>
-                                <div className="cart-item-quantity"><span className="cart-item-quantity-label">Qty:</span> {cart_item.quantity}</div>
+                                <div className="cart-item-crud-row">
+                                    <div className="cart-item-quantity"><span className="cart-item-quantity-label">Qty:</span> {cart_item.quantity}</div>
+                                    <div className="cart-item-crud-divider">|</div>
+                                    <div className="cart-item-delete-btn" onClick={() => this.deleteCartItem(cart_item, cart.id)}>Delete</div>
+                                </div>
                             </div>
                         </div>
                     ))}

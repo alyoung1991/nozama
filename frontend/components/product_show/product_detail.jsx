@@ -10,7 +10,6 @@ class ProductDetail extends React.Component {
         super(props);
 
         this.addProductToCart = this.addProductToCart.bind(this);
-        this.handleBackButton = this.handleBackButton.bind(this);
     }
 
     componentDidMount(){
@@ -34,11 +33,6 @@ class ProductDetail extends React.Component {
         this.props.history.push({
             pathname: '/cart/'
         });
-    }
-
-    handleBackButton(){
-        // this.props.history.goBack
-        console.log(this.props.history);
     }
 
     render(){

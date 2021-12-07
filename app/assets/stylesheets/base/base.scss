@@ -1511,13 +1511,33 @@ input[type="radio"] {
                     }
                 }
 
-                .cart-item-quantity {
-                    font-size: 14px;
-                    line-height: 20px;
+                .cart-item-crud-row {
+                    display: flex;
+                    align-items: center;
                     padding-top: 5px;
 
-                    .cart-item-quantity-label{
-                        font-weight: $bold;
+                    .cart-item-quantity {
+                        font-size: 14px;
+                        line-height: 20px;
+                        
+                        .cart-item-quantity-label{
+                            font-weight: $bold;
+                        }
+                    }
+
+                    .cart-item-crud-divider {
+                        color: #ddd;
+                        margin: 0 10px;
+                    }
+
+                    .cart-item-delete-btn {
+                        font-size: 12px;
+                        color: $amazon-link-blue;
+
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
                     }
                 }
             }            

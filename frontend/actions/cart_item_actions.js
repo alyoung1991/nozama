@@ -29,7 +29,7 @@ export const createCartItem = cart_item => dispatch => (
         .then((cart_item) => dispatch(receiveCartItem(cart_item)))
 );
 
-export const deleteCartItem = cart_item => dispatch => (
-    APIUtil.destroyCartItem(cart_item)
+export const deleteCartItem = (cart_item, cart_id) => dispatch => (
+    APIUtil.destroyCartItem(cart_item, cart_id)
         .then(cart_item => dispatch(removeCartItem(cart_item)))
 );

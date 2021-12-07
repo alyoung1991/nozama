@@ -22,7 +22,7 @@ class Cart extends React.Component {
 
     checkout(cart){
         this.props.deleteCart(cart)
-            .then(location.reload());
+            .then(this.props.history.push('/checkout'));
     }
 
     render(){

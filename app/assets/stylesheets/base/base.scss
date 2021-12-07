@@ -1633,5 +1633,29 @@ input[type="radio"] {
     }
 }
 
+.checkout-container {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 
+    .checkout-sub-container {
+        width: 780px;
+        min-width: 780px;
+        height: fit-content;
+        border: 1px solid $in-stock-green;
+        border-radius: 5px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+
+        .checkout-heading {
+            font-weight: $bold;
+            font-size: 24px;
+            color: $in-stock-green;
+            padding-bottom: 6px;
+        }
+    }
+}
 

@@ -29,8 +29,8 @@ class Api::CartsController < ApplicationController
     end
 
     def destroy
-        @cart.destroy if @cart.id == session[:cart_id]
-        session[:cart_id] = nil
+        @cart = Cart.find(params[:id])
+        @cart.cart_items.delete_all
         render json: @cart
     end
 

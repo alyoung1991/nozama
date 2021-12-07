@@ -14,7 +14,7 @@ export const createCart = (cart) => (
     })
 );
 
-export const destroyCart = (cart) => (
+export const emptyCart = (cart) => (
     $.ajax({
         method: 'DELETE',
         url: `/api/carts/${cart.id}`

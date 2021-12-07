@@ -6,6 +6,7 @@ class Cart extends React.Component {
         super(props);
 
         this.deleteCartItem = this.deleteCartItem.bind(this);
+        this.checkout = this.checkout.bind(this);
     }
     
     componentDidMount(){
@@ -19,12 +20,17 @@ class Cart extends React.Component {
             .then(location.reload());
     }
 
+    checkout(cart){
+        this.props.deleteCart(cart)
+            .then(location.reload());
+    }
+
     render(){
         const {cart} = this.props;
         let subTotal = 0;
         let numItems = 0;
         let cartItemsObject = {};
-        if(cart){
+        if(cart && cart.cart_items){
             numItems = cart.cart_items.length;
             cart.cart_items.forEach(cart_item => {
                 subTotal += cart_item.price;
@@ -44,6 +50,7 @@ class Cart extends React.Component {
             currency: 'USD'
         });
         const subTotalString = priceFormatter.format(subTotal);
+        const quantityOptions = [1,2,3,4,5,6,7,8,9];
         return ((cart) ? (
             (cart.cart_items.length > 0) ? (
             <div className="cart">
@@ -63,6 +70,15 @@ class Cart extends React.Component {
                                 <div className="cart-item-department"><span className="cart-item-department-label">Department:</span> {cart_item.item.department}</div>
                                 <div className="cart-item-crud-row">
                                     <div className="cart-item-quantity"><span className="cart-item-quantity-label">Qty:</span> {cart_item.quantity}</div>
+                                    {/* <select className="quantity-select">
+                                        {quantityOptions.map((num) => {
+                                            if(num === cart_item.quantity){
+                                                return <option selected value={num}>{num}</option>
+                                            } else {
+                                                return <option value={num}>{num}</option>
+                                            }
+                                        })}
+                                    </select> */}
                                     <div className="cart-item-crud-divider">|</div>
                                     <div className="cart-item-delete-btn" onClick={() => this.deleteCartItem(cart_item, cart.id)}>Delete</div>
                                 </div>
@@ -76,7 +92,7 @@ class Cart extends React.Component {
                 {(cart.cart_items.length > 0) ? (
                     <div className="subtotal-display">
                         <div className="subtotal-display-heading">Subtotal ({cart.cart_items.length} item{numItems === 1 ? '' : 's'}): <span className="cart-subtotal-amount">{subTotalString}</span></div>
-                        <button className="checkout-button">Proceed to checkout</button>
+                        <button onClick={() => this.checkout(cart)} className="checkout-button">Proceed to checkout</button>
                     </div>
                 ) : (
                     <></>

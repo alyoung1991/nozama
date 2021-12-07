@@ -6,6 +6,7 @@ class ProductShow extends React.Component{
         super(props);
 
         this.state = {reviews: this.props.reviews};
+        document.body.scrollTop = document.documentElement.scrollTop = 0
     }
 
     componentDidMount(){

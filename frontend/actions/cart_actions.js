@@ -24,6 +24,6 @@ export const createCart = (cart, sessionId) => dispatch => (
 );
 
 export const deleteCart = cart => dispatch => (
-    APIUtil.destroyCart(cart)
+    APIUtil.emptyCart(cart)
         .then(cart => dispatch(removeCart(cart)))
 );

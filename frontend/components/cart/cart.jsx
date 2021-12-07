@@ -12,16 +12,14 @@ class Cart extends React.Component {
         if(this.props.sessionId){
             this.props.fetchCart(1, this.props.sessionId);
         }
-        this.setState({});
     }
 
     deleteCartItem(cartItem, cartId){
         this.props.deleteCartItem(cartItem.item, cartId)
-            .then();
+            .then(location.reload());
     }
 
     render(){
-        // this.props.fetchCart(1, this.props.sessionId);
         const {cart} = this.props;
         let subTotal = 0;
         let numItems = 0;

@@ -6,7 +6,7 @@ class SearchBar extends React.Component {
         super(props);
         const queryParams = this.props.location.search.replace(/\?/g, '').split("+")
         this.query = queryParams[0] ? queryParams[0].substring(2) : '';
-        this.department = queryParams[1] ? queryParams[1].substring(2) : 'All'
+        this.department = queryParams[1] ? queryParams[1].substring(2).replaceAll('%20', ' ') : 'All'
         this.state = { 
             query: this.query,
             department: this.department
@@ -17,6 +17,7 @@ class SearchBar extends React.Component {
     }
 
     componentDidMount(){
+        document.querySelector(".search-bar").value = this.state.query;
         const logo = document.querySelector(".logo");
         let that = this;
         logo.addEventListener("click", () => {
@@ -25,7 +26,7 @@ class SearchBar extends React.Component {
                 query: '',
                 department: 'All'
             });
-        })
+        });
     }
 
     componentWillUnmount(){
@@ -46,8 +47,6 @@ class SearchBar extends React.Component {
                 pathname: '/products/',
                 search: `q=${this.state.query}+d=${this.state.department}`
             });
-
-            
         }
     }
 
@@ -58,10 +57,16 @@ class SearchBar extends React.Component {
     }
 
     render(){
+        const departments = ['All', 'Appliances', 'Arts, Crafts & Sewing', 'Automotive Parts & Accessories', 'Baby', 'Beauty & Personal Care',
+                             'Cell Phones & Accessories', 'Clothing, Shoes & Jewelry', 'Computers', 'Electronics', 'Garden & Outdoor', 'Grocery & Gourmet Food',
+                             'Handmade', 'Health, Household & Baby Care', 'Home & Kitchen', 'Industrial & Scientific', 'Luggage & Travel Gear', 'Movies & TV', 
+                             'Musical Instruments', 'Office Products', 'Pet Supplies', 'Smart Home', 'Sports & Outdoors', 'Tools & Home Improvement',
+                             'Toys & Games', 'Video Games'
+                            ];
         return (
             <div>
                 <form className="search-bar-form" onSubmit={this.handleSubmit}>
-                    <select type="dropdown" className="search-department-dropdown" onChange={this.handleInput('department')}>
+                    {/* <select type="dropdown" className="search-department-dropdown" onChange={this.handleInput('department')}>
                         <option defaultValue value="All">All</option>
                         <option value="Appliances">Appliances</option>
                         <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
@@ -73,7 +78,6 @@ class SearchBar extends React.Component {
                         <option value="Computers">Computers</option>
                         <option value="Electronics">Electronics</option>
                         <option value="Garden & Outdoor">Garden & Outdoor</option>
-                        <option value="Gift Cards">Gift Cards</option>
                         <option value="Grocery & Gourmet Food">Grocery & Gourmet Food</option>
                         <option value="Handmade">Handmade</option>
                         <option value="Health, Household & Baby Care">Health, Household & Baby Care</option>
@@ -89,6 +93,17 @@ class SearchBar extends React.Component {
                         <option value="Tools & Home Improvement">Tools & Home Improvement</option>
                         <option value="Toys & Games">Toys & Games</option>
                         <option value="Video Games">Video Games</option>
+                    </select> */}
+                    <select type="dropdown" className="search-department-dropdown" onChange={this.handleInput('department')}>
+                        {
+                            departments.map((department, i) => {
+                                if(department === this.state.department){
+                                    return <option key={`dept-${i}`} selected value={department}>{department}</option>;
+                                }else{
+                                    return <option key={`dept-${i}`} value={department}>{department}</option>;
+                                }
+                            })
+                        }
                     </select>
                     <input className="search-bar" type="text" value={this.state.query} onChange={this.handleInput('query')} />
                     <button className="search-button"><i className="fas fa-search"></i></button>

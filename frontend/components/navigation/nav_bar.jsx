@@ -9,6 +9,7 @@ class NavBar extends React.Component {
         super(props);
         this.handleClick = this.handleClick.bind(this);
         this.navigateToCart = this.navigateToCart.bind(this);
+        this.state = {};
     }
 
     componentDidMount(){
@@ -18,11 +19,18 @@ class NavBar extends React.Component {
     }
 
     handleClick(department){
-        this.props.history.push({
-            pathname: '/products/',
-            search: `q=+d=${department}`
-        });
-        this.props.updateFilter('department', department);
+        this.props.updateFilter('department', department)
+            .then(
+                this.props.updateFilter('query', '')
+            )
+            .then(
+                this.props.history.push({
+                    pathname: '/products/',
+                    search: `q=+d=${department}`
+                })
+            ).then(
+                location.reload()
+            );
     }
 
     navigateToCart(){
